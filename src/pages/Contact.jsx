@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react'
 import { Mail, Phone, MapPin, Clock, Send, MessageCircle, Smartphone } from 'lucide-react'
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', company: '', country: '', phone: '', product: '', message: '' })
+  const [form, setForm] = useState({ name: '', email: '', company: '', country: '', phone: '', product: '', message: '', website: '' })
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
 
   useEffect(() => {
     document.title = 'Contact Us — Sensor Measure | Get a Quote for Industrial Sensors'
@@ -13,22 +15,27 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    const subject = `Inquiry from ${form.name} — ${form.product || 'General Inquiry'}`
-    const body = `
-Name: ${form.name}
-Company: ${form.company}
-Email: ${form.email}
-Phone: ${form.phone}
-Country: ${form.country}
-Product Interest: ${form.product}
-
-Message:
-${form.message}
-    `.trim()
-    window.open(`mailto:Freya@sensor-measure.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank')
-    setSent(true)
+    setSending(true)
+    setError('')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      const data = await res.json()
+      if (data.success) {
+        setSent(true)
+      } else {
+        setError(data.message || 'Failed to send inquiry. Please try again.')
+      }
+    } catch (err) {
+      setError('Network error. Please email us directly at Freya@sensor-measure.com')
+    } finally {
+      setSending(false)
+    }
   }
 
   const productOptions = [
@@ -172,7 +179,7 @@ ${form.message}
                       Thank you for your inquiry. Our team will review your requirements and get back to you within 24 hours.
                     </p>
                     <button
-                      onClick={() => { setSent(false); setForm({ name: '', email: '', company: '', country: '', phone: '', product: '', message: '' }) }}
+                      onClick={() => { setSent(false); setForm({ name: '', email: '', company: '', country: '', phone: '', product: '', message: '', website: '' }) }}
                       className="text-primary-600 hover:text-primary-700 font-medium"
                     >
                       Send Another Inquiry
@@ -259,12 +266,24 @@ ${form.message}
                       />
                     </div>
 
-                    <button type="submit" className="btn-primary text-lg px-8 py-4 w-full sm:w-auto">
-                      <Send size={20} /> Send Inquiry
+                    <button type="submit" disabled={sending} className="btn-primary text-lg px-8 py-4 w-full sm:w-auto disabled:opacity-60 disabled:cursor-not-allowed">
+                      <Send size={20} /> {sending ? 'Sending...' : 'Send Inquiry'}
                     </button>
+                    {error && (
+                      <p className="text-sm text-red-600 mt-3 bg-red-50 border border-red-200 rounded-lg px-4 py-2">
+                        {error}
+                      </p>
+                    )}
                     <p className="text-xs text-gray-400 mt-2">
                       By submitting this form, you agree to our privacy policy. We will never share your information with third parties.
                     </p>
+                    {/* Honeypot field — hidden from humans, catches bots */}
+                    <input
+                      type="text" name="website"
+                      value={form.website} onChange={handleChange}
+                      style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0 }}
+                      tabIndex={-1} autoComplete="off"
+                    />
                   </form>
                 )}
               </div>
