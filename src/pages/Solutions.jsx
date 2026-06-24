@@ -36,7 +36,7 @@ const solutions = [
     title: 'Power Generation',
     desc: 'High-temperature and high-pressure rated sensors for power plant applications. Guided wave radar for boiler drums, differential pressure transmitters for flow measurement, and vortex flow meters for steam distribution monitoring.',
     products: ['Guided Wave Radar', 'Differential Pressure Transmitters', 'Vortex Flow Meters'],
-    links: ['radar-level-transmitters', 'pressure-sensors', 'flow-meters'],
+    links: ['radar-level-transmitters', 'pressure-sensors', 'vortex-flow-meters'],
   },
   {
     icon: <Ship size={28} />,

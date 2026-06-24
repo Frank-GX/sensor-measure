@@ -1,3 +1,8 @@
+import flowMeterCategories from './categories-flow-meters.js';
+import levelPressureCategories from './categories-level-pressure.js';
+import sensorCategories from './categories-sensors.js';
+
+
 const products = {
   'radar-level-transmitters': {
     title: 'Radar Level Transmitters',
@@ -192,7 +197,7 @@ Our SMGW-26G offers multiple probe configurations: rigid rod probes for shorter 
   },
 
   'ultrasonic-level-sensors': {
-    title: 'Ultrasonic Level Sensors',
+    title: 'Ultrasonic Transducer Sensors',
     description: 'Versatile non-contact level and distance measurement using ultrasonic technology. Cost-effective solutions for liquids and solids in open tanks, closed vessels, channels, and reservoirs. IP68 protection with multiple output options.',
     icon: '🔊',
     seo: {
@@ -379,7 +384,7 @@ The IP68-rated housing performs reliably in dusty, humid, and wet environments. 
   },
 
   'pressure-sensors': {
-    title: 'Pressure Sensors & Transmitters',
+    title: 'Precision Pressure Sensors',
     description: 'High-precision pressure measurement instruments for industrial process control. Including pressure transmitters, differential pressure sensors, submersible level transmitters, and digital pressure gauges. MEMS technology with 0.05% FS accuracy.',
     icon: '⚡',
     seo: {
@@ -794,254 +799,11 @@ Multiple communication options — RS485 Modbus RTU, 4-20mA analog, GPRS, and Wi
       },
     ],
   },
-
-  'flow-meters': {
-    title: 'Flow Meters',
-    description: 'Industrial flow measurement instruments including electromagnetic, ultrasonic, and vortex flow meters. Suitable for conductive and non-conductive liquids, gases, and steam. High accuracy with multiple output and communication options.',
-    icon: '🌊',
-    seo: {
-      title: 'Flow Meter Manufacturer | Electromagnetic, Ultrasonic, Vortex Flow Meters',
-      description: 'Professional flow meter manufacturer. Electromagnetic flow meters DN10-DN2600, ultrasonic flow meters, vortex flow meters. ±0.2% accuracy, IP68, 4-20mA/RS485/HART output. CE certified. OEM/ODM. Global shipping.',
-    },
-    items: [
-      {
-        slug: 'electromagnetic-flow-meter',
-        name: 'Electromagnetic Flow Meter',
-        model: 'SMFM-2600',
-        image: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=600&h=400&fit=crop',
-        specs: [
-          { label: 'Diameter Range', value: 'DN10 - DN2600' },
-          { label: 'Accuracy', value: '±0.2% (customized) / ±0.5% (standard)' },
-          { label: 'Pressure Rating', value: '1.6 / 2.5 / 4.0 MPa (special)' },
-          { label: 'Temperature Range', value: '-20 to +160 °C' },
-          { label: 'Output Signal', value: '4-20mA / Pulse / 0-10V' },
-          { label: 'Communication', value: 'RS485 Modbus / HART' },
-          { label: 'Power Supply', value: '24 VDC / 220 VAC' },
-          { label: 'Protection Class', value: 'IP65 / IP68 (optional)' },
-          { label: 'Installation', value: 'Flange / Clamp-on / Thread' },
-          { label: 'Liner Material', value: 'PTFE / PFA / Rubber / Polyurethane' },
-          { label: 'Electrode Material', value: '316L SS / Hastelloy C / Titanium / Tantalum / Platinum' },
-          { label: 'Remote Transmission', value: 'GPRS wireless (optional)' },
-          { label: 'Certification', value: 'CE, ISO9001' },
-        ],
-        features: [
-          'Wide diameter range from DN10 to DN2600 for any pipe size',
-          'High accuracy ±0.2% for custody transfer applications',
-          'Multiple liner and electrode materials for chemical compatibility',
-          'No moving parts — maintenance-free and long service life',
-          'Not affected by fluid density, viscosity, temperature, or pressure',
-          'GPRS wireless remote monitoring capability',
-          'Bi-directional flow measurement support',
-          'IP68 optional for submerged installations',
-        ],
-        applications: ['Water and wastewater', 'Chemical and petrochemical', 'Acid and alkali liquids', 'Irrigation and agriculture', 'Mining and mineral processing', 'Food and beverage'],
-        description: `The SMFM-2600 Electromagnetic Flow Meter is a versatile flow measurement solution based on Faraday's law of electromagnetic induction. Suitable for conductive liquids, it measures flow velocity by detecting the voltage induced when conductive fluid passes through a magnetic field. With a diameter range from DN10 to DN2600, it accommodates everything from small process lines to large municipal water mains.
-
-The meter features no moving parts, ensuring maintenance-free operation and long service life. Measurement accuracy is unaffected by fluid density, viscosity, temperature, pressure, or flow profile distortions — making it ideal for challenging applications involving corrosive, abrasive, or high-solid-content liquids.
-
-Multiple liner materials (PTFE, PFA, rubber, polyurethane) and electrode materials (316L SS, Hastelloy C, titanium, tantalum, platinum) provide chemical compatibility for virtually any conductive liquid. The optional GPRS wireless module enables remote monitoring of flow data from any location, while the IP68 option supports submerged installation in manholes and underground vaults.`,
-        filterTags: {
-          outputSignal: ['4-20mA', 'RS485 Modbus', 'HART', 'Pulse'],
-          protectionGrade: 'IP65',
-          measuringRange: 'DN10-DN2600',
-          powerSupply: '24 VDC / 220 VAC',
-          applicationAreas: ['Water Treatment', 'Chemical', 'Agriculture', 'Mining', 'Food & Beverage'],
-        },
-      },
-      {
-        slug: 'ultrasonic-flow-meter',
-        name: 'Ultrasonic Flow Meter',
-        model: 'SMFM-U100',
-        image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&h=400&fit=crop',
-        specs: [
-          { label: 'Measurement Principle', value: 'Transit-Time Difference' },
-          { label: 'Pipe Diameter', value: 'DN15 - DN4000' },
-          { label: 'Accuracy', value: '±1.0% of reading' },
-          { label: 'Flow Velocity Range', value: '0.01 - 12 m/s' },
-          { label: 'Pressure Rating', value: '1.6 MPa (standard) / higher on request' },
-          { label: 'Temperature Range', value: '-40 to +160 °C' },
-          { label: 'Output Signal', value: '4-20mA / Pulse / RS485 Modbus' },
-          { label: 'Power Supply', value: '24 VDC / 220 VAC / Battery (portable)' },
-          { label: 'Protection Class', value: 'IP65 / IP68 (optional)' },
-          { label: 'Installation', value: 'Clamp-on / Insertion / Inline' },
-          { label: 'Pipe Material', value: 'Steel, SS, Cast Iron, PVC, Copper, Aluminum' },
-          { label: 'Data Logging', value: 'Built-in (100,000+ data points)' },
-          { label: 'Certification', value: 'CE' },
-        ],
-        features: [
-          'Non-invasive clamp-on installation — no pipe cutting required',
-          'Works on metal, plastic, and composite pipe materials',
-          'Bi-directional flow measurement with reverse flow detection',
-          'No pressure drop and no moving parts',
-          'Portable battery-powered version available for field surveys',
-          'Built-in data logger for long-term unattended monitoring',
-          'Multiple installation options: clamp-on, insertion, or inline',
-          'Suitable for clean liquids and moderately aerated fluids',
-        ],
-        applications: ['HVAC and energy monitoring', 'Water distribution networks', 'Industrial process monitoring', 'Leak detection systems', 'Irrigation and agriculture', 'Batch control and dosing'],
-        description: `The SMFM-U100 Ultrasonic Flow Meter uses the transit-time difference principle to measure flow velocity in full pipes. By comparing the travel time of ultrasonic pulses transmitted upstream and downstream, it calculates flow velocity with ±1.0% accuracy — without requiring any intrusion into the pipe.
-
-The clamp-on design enables quick and easy installation without cutting pipes or shutting down processes. Transducers are mounted externally on the pipe wall, making the SMFM-U100 ideal for retrofitting existing installations and for applications where pipe integrity must be maintained. The meter works on steel, stainless steel, cast iron, PVC, copper, and aluminum pipes.
-
-The portable battery-powered version is perfect for field surveys, flow verification, and temporary monitoring. The built-in data logger stores over 100,000 data points, enabling long-term unattended monitoring. With bi-directional flow measurement and reverse flow detection, it provides comprehensive flow data for custody transfer, leak detection, and energy management applications.`,
-        filterTags: {
-          outputSignal: ['4-20mA', 'RS485 Modbus', 'Pulse'],
-          protectionGrade: 'IP65',
-          measuringRange: 'DN15-DN4000',
-          powerSupply: '24 VDC / 220 VAC / Battery',
-          applicationAreas: ['HVAC', 'Water Treatment', 'Industrial', 'Agriculture'],
-        },
-      },
-      {
-        slug: 'vortex-flow-meter',
-        name: 'Vortex Flow Meter',
-        model: 'SMFM-V200',
-        image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop',
-        specs: [
-          { label: 'Measurement Principle', value: 'Karman Vortex Street' },
-          { label: 'Pipe Diameter', value: 'DN15 - DN500' },
-          { label: 'Accuracy', value: '±1.0% (liquids) / ±1.5% (gases/steam)' },
-          { label: 'Flow Velocity Range', value: '0.3 - 10 m/s (liquids) / 5 - 80 m/s (gases)' },
-          { label: 'Pressure Rating', value: '1.6 / 2.5 / 4.0 MPa' },
-          { label: 'Temperature Range', value: '-40 to +350 °C' },
-          { label: 'Output Signal', value: '4-20mA / Pulse / RS485 Modbus / HART' },
-          { label: 'Power Supply', value: '24 VDC / 220 VAC' },
-          { label: 'Protection Class', value: 'IP65' },
-          { label: 'Body Material', value: 'SS304 / SS316L' },
-          { label: 'Temperature Compensation', value: 'Integrated RTD (optional)' },
-          { label: 'Display', value: 'LCD with backlight' },
-          { label: 'Certification', value: 'CE, ISO9001' },
-        ],
-        features: [
-          'Measures liquids, gases, and steam with a single meter',
-          'Integrated temperature and pressure compensation option',
-          'No moving parts — high reliability and low maintenance',
-          'Wide temperature range up to +350°C for steam applications',
-          'Stainless steel construction for harsh environments',
-          'HART protocol for remote configuration and diagnostics',
-          'LCD display with backlight for local reading',
-          'Suitable for saturated and superheated steam measurement',
-        ],
-        applications: ['Steam measurement and distribution', 'Compressed air systems', 'Industrial gas monitoring', 'Boiler feedwater', 'Chemical process control', 'Energy management systems'],
-        description: `The SMFM-V200 Vortex Flow Meter operates on the Karman vortex street principle — when fluid flows past a bluff body, alternating vortices are shed at a frequency proportional to the flow velocity. By detecting these vortex frequencies, the meter provides accurate flow measurement for liquids, gases, and steam.
-
-One of the key advantages of the vortex flow meter is its ability to measure steam at high temperatures up to +350°C, making it the preferred choice for steam distribution and boiler monitoring applications. The integrated temperature compensation option (with built-in RTD) enables mass flow calculation for saturated and superheated steam without additional instruments.
-
-With no moving parts, the SMFM-V200 offers high reliability and minimal maintenance. The stainless steel construction (SS304/SS316L) ensures durability in harsh industrial environments. HART protocol support enables remote configuration, diagnostics, and process variable access, while the LCD display with backlight provides convenient local reading.`,
-        filterTags: {
-          outputSignal: ['4-20mA', 'RS485 Modbus', 'HART', 'Pulse'],
-          protectionGrade: 'IP65',
-          measuringRange: 'DN15-DN500',
-          powerSupply: '24 VDC / 220 VAC',
-          applicationAreas: ['Power Generation', 'Chemical', 'Oil & Gas', 'Industrial'],
-        },
-      },
-    ],
-  },
-
-  'capacitive-level-sensors': {
-    title: 'Capacitive Level Sensors',
-    description: 'RF capacitive level transmitters and switches for continuous level measurement and point level detection in liquids and solids. Ideal for high-temperature, high-pressure, and corrosive environments where traditional sensors fail.',
-    icon: '📊',
-    seo: {
-      title: 'Capacitive Level Sensor Manufacturer | RF Capacitance Level Transmitter',
-      description: 'Professional capacitive level sensor manufacturer. RF capacitive level transmitters and switches for liquids and solids. IP67, HART/RS485/CAN bus, -50 to +250°C. CE certified. OEM/ODM available. Global shipping.',
-    },
-    items: [
-      {
-        slug: 'capacitive-level-transmitter',
-        name: 'Capacitive Level Transmitter',
-        model: 'SMCL-600',
-        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop',
-        specs: [
-          { label: 'Detection Range', value: '0.01 - 30 m' },
-          { label: 'Accuracy', value: '0.2% FS / 0.5% FS' },
-          { label: 'Pressure Range', value: '-0.1 to 32 MPa' },
-          { label: 'Probe Temperature', value: '-50 to +250 °C' },
-          { label: 'Ambient Temperature', value: '-20 to +60 °C' },
-          { label: 'Output Signal', value: '4-20mA / HART / RS485 / CAN Bus' },
-          { label: 'Power Supply', value: '12-28 VDC (safety barrier powered)' },
-          { label: 'Protection Grade', value: 'IP67' },
-          { label: 'Wetted Material', value: '316 SS / 1Cr18Ni9Ti / PTFE' },
-          { label: 'Long-term Stability', value: '≤ 0.2% FS / year' },
-          { label: 'Temperature Drift', value: '≤ 0.02% FS / °C (0-70°C)' },
-          { label: 'Explosion-proof', value: 'Exia IIC T6 / Exd IIC T5 (optional)' },
-          { label: 'Mounting', value: 'M20×1.5 / M27×2 / Flange DN25/DN40/DN50' },
-          { label: 'Certification', value: 'CE' },
-        ],
-        features: [
-          'No movable or elastic parts — high reliability, minimal maintenance',
-          'Suitable for high-temperature, high-pressure, and corrosive environments',
-          'Advanced RF capacitive sensing circuit with temperature compensation',
-          'Self-calibration: full-range zero and span automatic calibration',
-          'Multiple communication protocols: HART, CAN bus, RS485',
-          'Measurement unaffected by liquid temperature, density, or container shape',
-          'Overcurrent, overvoltage, and reverse polarity protection',
-          'Replaces float, submersible, and differential pressure transmitters',
-        ],
-        applications: ['Oil and fuel tanks', 'Chemical reactors and storage', 'Boiler water level', 'Acid and alkali solutions', 'Water treatment plants', 'Cement and powder silos'],
-        description: `The SMCL-600 Capacitive Level Transmitter is designed for continuous level detection of liquids and solids in harsh conditions including high temperature, high pressure, high corrosion, crystallization, and plugging. It provides a reliable alternative to traditional float-type, submersible, and differential pressure level transmitters.
-
-The transmitter features no movable or elastic components, resulting in exceptional reliability and impact resistance with minimal maintenance requirements. The advanced RF capacitive sensing circuit is precisely compensated for temperature and corrected for linearity, outputting a standardized 4-20mA signal. Configuration is flexible with HART, CAN bus, or RS485 communication protocols.
-
-The self-calibration feature enables users to perform "zero" and "range" automatic calibration using two keys, allowing easy adaptation to diverse and complex application conditions. The measurement is not affected by the liquid's temperature, specific gravity, container shape, or pressure — making it ideal for applications where other technologies struggle.
-
-With a pressure range up to 32 MPa and probe temperature rating of -50 to +250°C, the SMCL-600 handles the most extreme process conditions. Multiple wetted material options (316 SS, 1Cr18Ni9Ti, PTFE) ensure chemical compatibility for virtually any medium.`,
-        filterTags: {
-          outputSignal: ['4-20mA', 'HART', 'RS485', 'CAN Bus'],
-          protectionGrade: 'IP67',
-          measuringRange: 'Up to 30m',
-          powerSupply: '12-28 VDC',
-          applicationAreas: ['Oil & Gas', 'Chemical', 'Power Generation', 'Water Treatment'],
-        },
-      },
-      {
-        slug: 'rf-capacitive-level-switch',
-        name: 'RF Capacitive Level Switch',
-        model: 'SMCL-500',
-        image: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=600&h=400&fit=crop',
-        specs: [
-          { label: 'Detection Principle', value: 'RF Capacitance' },
-          { label: 'Probe Length', value: '100mm - 3000mm (customizable)' },
-          { label: 'Probe Material', value: 'PTFE / 316 SS / PFA coated' },
-          { label: 'Pressure Range', value: '-0.1 to 4.0 MPa' },
-          { label: 'Probe Temperature', value: '-40 to +200 °C' },
-          { label: 'Output Signal', value: 'SPDT Relay / NPN / PNP' },
-          { label: 'Power Supply', value: '24 VDC / 220 VAC' },
-          { label: 'Protection Grade', value: 'IP66' },
-          { label: 'Response Time', value: '< 0.5 seconds' },
-          { label: 'Sensitivity', value: 'Adjustable (1-50pF)' },
-          { label: 'Time Delay', value: '0-10 seconds adjustable' },
-          { label: 'LED Indication', value: 'Status LED (red/green)' },
-          { label: 'Explosion-proof', value: 'Exd IIC T6 (optional)' },
-          { label: 'Certification', value: 'CE' },
-        ],
-        features: [
-          'Point level detection for liquids, powders, and granular solids',
-          'Adjustable sensitivity for different media dielectric constants',
-          'PTFE coated probe for aggressive chemical media',
-          'SPDT relay output for direct alarm and control circuit integration',
-          'Adjustable time delay to prevent false triggering from turbulence',
-          'LED status indication for quick visual diagnostics',
-          'No calibration required for many applications',
-          'Compact design for easy mounting in small nozzles',
-        ],
-        applications: ['High and low level alarms', 'Pump dry-run protection', 'Silo blockage detection', 'Overflow prevention', 'Dry powder and granular solids', 'Interface detection'],
-        description: `The SMCL-500 RF Capacitive Level Switch provides reliable point level detection for liquids, powders, and granular solids. When the probe comes into contact with the measured medium, the capacitance change is detected by the RF circuit, triggering the output relay — making it ideal for high/low level alarms, pump protection, and overflow prevention.
-
-The adjustable sensitivity (1-50pF) accommodates different media dielectric constants, from low-dielectric powders to high-dielectric liquids. The PTFE-coated probe option provides excellent chemical resistance for aggressive media such as acids, alkalis, and solvents. The adjustable time delay (0-10 seconds) prevents false triggering caused by surface turbulence or splashing.
-
-With SPDT relay output, the SMCL-500 integrates directly into alarm circuits, PLC inputs, and motor control circuits without additional interfaces. The LED status indicator provides quick visual confirmation of switch status — green for normal, red for alarm. The optional explosion-proof certification (Exd IIC T6) enables use in hazardous area applications.`,
-        filterTags: {
-          outputSignal: ['SPDT Relay', 'NPN', 'PNP'],
-          protectionGrade: 'IP66',
-          measuringRange: 'Point Level Detection',
-          powerSupply: '24 VDC / 220 VAC',
-          applicationAreas: ['Oil & Gas', 'Chemical', 'Industrial', 'Cement & Powder'],
-        },
-      },
-    ],
-  },
 }
 
-export default products
+export default {
+  ...products,
+  ...flowMeterCategories,
+  ...levelPressureCategories,
+  ...sensorCategories,
+}

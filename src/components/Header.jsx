@@ -2,19 +2,66 @@ import { useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, X, ChevronDown, Phone, Mail, MessageCircle } from 'lucide-react'
 
+const productGroups = [
+  {
+    group: 'Level Measurement',
+    items: [
+      { to: '/products/radar-level-transmitters', label: 'Radar Level Transmitters' },
+      { to: '/products/ultrasonic-level-sensors', label: 'Ultrasonic Transducer Sensors' },
+      { to: '/products/fluid-level-meters', label: 'Fluid Level Meters' },
+    ]
+  },
+  {
+    group: 'Flow Measurement',
+    items: [
+      { to: '/products/ultrasonic-flow-meters', label: 'Ultrasonic Flow Meters' },
+      { to: '/products/electromagnetic-flow-meters', label: 'Electromagnetic Flow Meters' },
+      { to: '/products/turbine-flow-meters', label: 'Turbine Flow Meters' },
+      { to: '/products/vortex-flow-meters', label: 'Vortex Flow Meters' },
+      { to: '/products/coriolis-mass-flow-meters', label: 'Coriolis Mass Flow Meters' },
+      { to: '/products/ultrasonic-water-meters', label: 'Ultrasonic Water Meters' },
+    ]
+  },
+  {
+    group: 'Pressure & Gauge',
+    items: [
+      { to: '/products/pressure-sensors', label: 'Precision Pressure Sensors' },
+      { to: '/products/wireless-pressure-transmitters', label: 'Wireless Pressure Transmitters' },
+      { to: '/products/digital-pressure-gauges', label: 'Digital Pressure Gauges' },
+    ]
+  },
+  {
+    group: 'Water Quality',
+    items: [
+      { to: '/products/water-quality-sensors', label: 'Water Quality Sensors' },
+    ]
+  },
+  {
+    group: 'Motion & Force Sensors',
+    items: [
+      { to: '/products/electronic-gyroscope-sensors', label: 'Electronic Gyroscope Sensors' },
+      { to: '/products/inclinometer-sensors', label: 'Inclinometer Sensors' },
+      { to: '/products/accelerometer-sensors', label: 'Accelerometer Sensors' },
+      { to: '/products/load-cell-sensors', label: 'Load Cell Sensors' },
+    ]
+  },
+  {
+    group: 'Environmental & Other',
+    items: [
+      { to: '/products/gas-detector-sensors', label: 'Gas Detector Sensors' },
+      { to: '/products/laser-sensors', label: 'Laser Sensors' },
+      { to: '/products/temperature-sensors', label: 'Temperature Sensors' },
+      { to: '/products/oxygen-concentrators', label: 'Oxygen Concentrators' },
+    ]
+  },
+]
+
 const navLinks = [
   { to: '/', label: 'Home' },
   {
     label: 'Products',
     to: '/products',
-    children: [
-      { to: '/products/radar-level-transmitters', label: 'Radar Level Transmitters' },
-      { to: '/products/ultrasonic-level-sensors', label: 'Ultrasonic Level Sensors' },
-      { to: '/products/pressure-sensors', label: 'Pressure Sensors' },
-      { to: '/products/water-quality-sensors', label: 'Water Quality Sensors' },
-      { to: '/products/flow-meters', label: 'Flow Meters' },
-      { to: '/products/capacitive-level-sensors', label: 'Capacitive Level Sensors' },
-    ]
+    megaMenu: true,
   },
   { to: '/blog', label: 'Blog' },
   { to: '/about', label: 'About Us' },
@@ -65,7 +112,7 @@ export default function Header() {
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) =>
-              link.children ? (
+              link.megaMenu ? (
                 <div key={link.label} className="relative group"
                   onMouseEnter={() => setProductsOpen(true)}
                   onMouseLeave={() => setProductsOpen(false)}>
@@ -81,16 +128,28 @@ export default function Header() {
                     <ChevronDown size={14} className={`transition-transform ${productsOpen ? 'rotate-180' : ''}`} />
                   </NavLink>
                   {productsOpen && (
-                    <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg py-2 w-64">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.to}
-                          to={child.to}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600"
-                        >
-                          {child.label}
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 bg-white border border-gray-200 rounded-lg shadow-xl py-4 w-[640px]">
+                      <div className="grid grid-cols-3 gap-x-6 gap-y-1 px-4">
+                        {productGroups.map((pg) => (
+                          <div key={pg.group} className="mb-2">
+                            <div className="text-xs font-bold text-gray-400 uppercase tracking-wide mb-1.5 px-2">{pg.group}</div>
+                            {pg.items.map((item) => (
+                              <Link
+                                key={item.to}
+                                to={item.to}
+                                className="block px-2 py-1.5 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded"
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                      <div className="border-t border-gray-100 mt-2 pt-2 px-4 text-center">
+                        <Link to="/products" className="text-sm font-medium text-primary-600 hover:text-primary-700">
+                          View All Products →
                         </Link>
-                      ))}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -126,10 +185,10 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden border-t border-gray-100 bg-white">
+        <div className="lg:hidden border-t border-gray-100 bg-white max-h-[80vh] overflow-y-auto">
           <div className="px-4 py-3 space-y-1">
             {navLinks.map((link) =>
-              link.children ? (
+              link.megaMenu ? (
                 <div key={link.label}>
                   <button
                     onClick={() => setProductsOpen(!productsOpen)}
@@ -139,16 +198,21 @@ export default function Header() {
                     <ChevronDown size={14} className={`transition-transform ${productsOpen ? 'rotate-180' : ''}`} />
                   </button>
                   {productsOpen && (
-                    <div className="ml-4 space-y-1">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.to}
-                          to={child.to}
-                          onClick={() => { setMenuOpen(false); setProductsOpen(false) }}
-                          className="block px-3 py-1.5 text-sm text-gray-600 hover:text-primary-600"
-                        >
-                          {child.label}
-                        </Link>
+                    <div className="ml-2 space-y-2">
+                      {productGroups.map((pg) => (
+                        <div key={pg.group}>
+                          <div className="text-xs font-bold text-gray-400 uppercase tracking-wide px-3 py-1">{pg.group}</div>
+                          {pg.items.map((item) => (
+                            <Link
+                              key={item.to}
+                              to={item.to}
+                              onClick={() => { setMenuOpen(false); setProductsOpen(false) }}
+                              className="block px-3 py-1.5 text-sm text-gray-600 hover:text-primary-600"
+                            >
+                              {item.label}
+                            </Link>
+                          ))}
+                        </div>
                       ))}
                     </div>
                   )}

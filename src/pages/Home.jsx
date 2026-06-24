@@ -13,17 +13,38 @@ const categories = [
   },
   {
     slug: 'ultrasonic-level-sensors',
-    title: 'Ultrasonic Level Sensors',
+    title: 'Ultrasonic Transducer Sensors',
     description: 'Cost-effective non-contact ultrasonic level measurement for water, wastewater, chemicals, and bulk solids.',
     icon: '🔊',
     items: ['Level Transmitter 20m', 'Water Tank Sensor', 'Long-Range 30m', 'Compact Sensor'],
   },
   {
+    slug: 'fluid-level-meters',
+    title: 'Fluid Level Meters',
+    description: 'Capacitive, hydrostatic, and magnetic float level sensors for liquids and solids in tanks and silos.',
+    icon: '🛢️',
+    items: ['Capacitive Level Sensor', 'Hydrostatic Transmitter', 'Magnetic Float Indicator'],
+  },
+  {
     slug: 'pressure-sensors',
-    title: 'Pressure Sensors',
-    description: 'High-precision pressure transmitters, differential pressure sensors, submersible level sensors, and digital gauges.',
+    title: 'Precision Pressure Sensors',
+    description: 'High-precision pressure transmitters, differential pressure sensors, and submersible level transmitters.',
     icon: '⚡',
-    items: ['Pressure Transmitter 4-20mA', 'Differential Pressure', 'Submersible Level', 'Digital Pressure Gauge'],
+    items: ['Pressure Transmitter 4-20mA', 'Differential Pressure', 'Submersible Level'],
+  },
+  {
+    slug: 'wireless-pressure-transmitters',
+    title: 'Wireless Pressure Transmitters',
+    description: 'Battery-powered IoT pressure transmitters with LoRa and NB-IoT connectivity for remote monitoring.',
+    icon: '📶',
+    items: ['LoRa Pressure Transmitter', 'NB-IoT Pressure Transmitter'],
+  },
+  {
+    slug: 'digital-pressure-gauges',
+    title: 'Digital Pressure Gauges',
+    description: 'High-accuracy digital pressure gauges with LCD display, data logging, and field-adjustable settings.',
+    icon: '📟',
+    items: ['Digital Pressure Gauge', 'Smart Differential Pressure Gauge'],
   },
   {
     slug: 'water-quality-sensors',
@@ -33,18 +54,102 @@ const categories = [
     items: ['pH/ORP Sensor', 'Dissolved Oxygen', 'Turbidity Sensor', 'COD Sensor', 'Multi-Parameter Monitor'],
   },
   {
-    slug: 'flow-meters',
-    title: 'Flow Meters',
-    description: 'Electromagnetic, ultrasonic, and vortex flow meters for liquids, gases, and steam measurement.',
-    icon: '🌊',
-    items: ['Electromagnetic DN2600', 'Ultrasonic Clamp-on', 'Vortex Flow Meter'],
+    slug: 'ultrasonic-flow-meters',
+    title: 'Ultrasonic Flow Meters',
+    description: 'Non-invasive clamp-on and inline ultrasonic flow meters for liquid measurement with no pressure loss.',
+    icon: '🔊',
+    items: ['Handheld Ultrasonic Flow Meter', 'Fixed Ultrasonic Flow Meter', 'Ultrasonic Heat Flow Meter'],
   },
   {
-    slug: 'capacitive-level-sensors',
-    title: 'Capacitive Level Sensors',
-    description: 'RF capacitive level transmitters and switches for high-temperature, high-pressure, and corrosive environments.',
-    icon: '📊',
-    items: ['Capacitive Level Transmitter', 'RF Capacitive Level Switch'],
+    slug: 'electromagnetic-flow-meters',
+    title: 'Electromagnetic Flow Meters',
+    description: 'High-accuracy inline mag meters for conductive liquids. No moving parts, no pressure loss, ±0.5% accuracy.',
+    icon: '⚡',
+    items: ['Inline Mag Flow Meter', 'Battery-Powered Mag Meter'],
+  },
+  {
+    slug: 'turbine-flow-meters',
+    title: 'Turbine Flow Meters',
+    description: 'Precision turbine flow meters for clean liquid and gas measurement. ±0.5% accuracy, 15:1 turndown ratio.',
+    icon: '🌀',
+    items: ['Liquid Turbine Flow Meter', 'Gas Turbine Flow Meter'],
+  },
+  {
+    slug: 'vortex-flow-meters',
+    title: 'Vortex Flow Meters',
+    description: 'Versatile vortex shedding flow meters for steam, gas, and liquid. No moving parts, up to 350°C.',
+    icon: '🌊',
+    items: ['Vortex Flow Meter for Steam', 'Insertion Vortex Flow Meter'],
+  },
+  {
+    slug: 'coriolis-mass-flow-meters',
+    title: 'Coriolis Mass Flow Meters',
+    description: 'Direct mass flow, density, and temperature measurement. ±0.1% accuracy, 500:1 turndown ratio.',
+    icon: '⚖️',
+    items: ['Coriolis Mass Flow Meter', 'Micro-Batch Coriolis Meter'],
+  },
+  {
+    slug: 'ultrasonic-water-meters',
+    title: 'Ultrasonic Water Meters',
+    description: 'Smart ultrasonic water meters for residential and industrial water measurement with IoT connectivity.',
+    icon: '💧',
+    items: ['Smart Ultrasonic Water Meter', 'Industrial Ultrasonic Water Meter'],
+  },
+  {
+    slug: 'electronic-gyroscope-sensors',
+    title: 'Electronic Gyroscope Sensors',
+    description: 'MEMS and fiber optic gyroscope sensors for angular velocity measurement in navigation and stabilization.',
+    icon: '🧭',
+    items: ['MEMS Gyroscope Sensor', 'Fiber Optic Gyroscope (FOG)'],
+  },
+  {
+    slug: 'inclinometer-sensors',
+    title: 'Inclinometer Sensors',
+    description: 'High-accuracy single-axis and dual-axis inclinometer sensors for tilt angle measurement.',
+    icon: '📐',
+    items: ['Dual-Axis MEMS Inclinometer', 'Geotechnical Inclinometer Probe'],
+  },
+  {
+    slug: 'accelerometer-sensors',
+    title: 'Accelerometer Sensors',
+    description: 'Industrial accelerometer sensors for vibration monitoring and predictive maintenance.',
+    icon: '📳',
+    items: ['Industrial Vibration Accelerometer', 'Triaxial MEMS Accelerometer'],
+  },
+  {
+    slug: 'load-cell-sensors',
+    title: 'Load Cell Sensors',
+    description: 'Strain gauge load cells for force and weight measurement. Compression, tension, and S-type configurations.',
+    icon: '⚖️',
+    items: ['Compression Load Cell', 'S-Type Load Cell'],
+  },
+  {
+    slug: 'gas-detector-sensors',
+    title: 'Gas Detector Sensors',
+    description: 'Fixed and portable gas detectors for toxic, combustible, and asphyxiant gas monitoring.',
+    icon: '☣️',
+    items: ['Fixed Gas Detector', 'Portable Multi-Gas Detector'],
+  },
+  {
+    slug: 'laser-sensors',
+    title: 'Laser Sensors',
+    description: 'Laser distance and displacement sensors for non-contact precision measurement in automation.',
+    icon: '🔬',
+    items: ['Laser Distance Sensor', 'Laser Displacement Sensor'],
+  },
+  {
+    slug: 'temperature-sensors',
+    title: 'Temperature Sensors',
+    description: 'RTD (PT100/PT1000) and thermocouple temperature sensors for industrial process control.',
+    icon: '🌡️',
+    items: ['RTD Temperature Sensor (PT100)', 'Thermocouple Temperature Sensor'],
+  },
+  {
+    slug: 'oxygen-concentrators',
+    title: 'Oxygen Concentrators',
+    description: 'PSA oxygen concentrators and generators for medical and industrial oxygen supply.',
+    icon: '🫁',
+    items: ['Medical Oxygen Concentrator', 'Industrial Oxygen Generator'],
   },
 ]
 
@@ -83,7 +188,7 @@ export default function Home() {
               <span className="block text-accent-500">for Global Measurement Solutions</span>
             </h1>
             <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl">
-              Professional manufacturer of radar level transmitters, ultrasonic level sensors, pressure sensors, water quality sensors, flow meters, and capacitive level sensors. CE & RoHS certified with factory-direct pricing and global shipping.
+              One-stop manufacturer of 21 product categories — radar level transmitters, flow meters, pressure sensors, water quality monitors, gyroscopes, gas detectors, and more. CE & RoHS certified with factory-direct pricing and global shipping.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/products" className="btn-primary bg-accent-500 hover:bg-accent-600 text-white border-0 text-lg px-8 py-4">

@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2 font-bold text-xl text-white mb-4">
@@ -23,24 +23,37 @@ export default function Footer() {
           </div>
 
           {/* Products */}
-          <div>
+          <div className="lg:col-span-2">
             <h4 className="text-white font-semibold mb-4">Products</h4>
-            <ul className="space-y-2 text-sm">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-1.5 text-sm">
               {[
                 ['Radar Level Transmitters', '/products/radar-level-transmitters'],
-                ['Ultrasonic Level Sensors', '/products/ultrasonic-level-sensors'],
-                ['Pressure Sensors', '/products/pressure-sensors'],
+                ['Ultrasonic Transducer Sensors', '/products/ultrasonic-level-sensors'],
+                ['Fluid Level Meters', '/products/fluid-level-meters'],
+                ['Precision Pressure Sensors', '/products/pressure-sensors'],
+                ['Wireless Pressure Transmitters', '/products/wireless-pressure-transmitters'],
+                ['Digital Pressure Gauges', '/products/digital-pressure-gauges'],
                 ['Water Quality Sensors', '/products/water-quality-sensors'],
-                ['Flow Meters', '/products/flow-meters'],
-                ['Capacitive Level Sensors', '/products/capacitive-level-sensors'],
+                ['Ultrasonic Flow Meters', '/products/ultrasonic-flow-meters'],
+                ['Electromagnetic Flow Meters', '/products/electromagnetic-flow-meters'],
+                ['Turbine Flow Meters', '/products/turbine-flow-meters'],
+                ['Vortex Flow Meters', '/products/vortex-flow-meters'],
+                ['Coriolis Mass Flow Meters', '/products/coriolis-mass-flow-meters'],
+                ['Ultrasonic Water Meters', '/products/ultrasonic-water-meters'],
+                ['Electronic Gyroscope Sensors', '/products/electronic-gyroscope-sensors'],
+                ['Inclinometer Sensors', '/products/inclinometer-sensors'],
+                ['Accelerometer Sensors', '/products/accelerometer-sensors'],
+                ['Load Cell Sensors', '/products/load-cell-sensors'],
+                ['Gas Detector Sensors', '/products/gas-detector-sensors'],
+                ['Laser Sensors', '/products/laser-sensors'],
+                ['Temperature Sensors', '/products/temperature-sensors'],
+                ['Oxygen Concentrators', '/products/oxygen-concentrators'],
               ].map(([label, to]) => (
-                <li key={to}>
-                  <Link to={to} className="flex items-center gap-1 hover:text-white transition-colors">
-                    <ChevronRight size={12} />{label}
-                  </Link>
-                </li>
+                <Link key={to} to={to} className="flex items-center gap-1 hover:text-white transition-colors text-gray-400 text-xs">
+                  <ChevronRight size={10} />{label}
+                </Link>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* Quick Links */}
