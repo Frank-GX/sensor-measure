@@ -30,8 +30,9 @@ export default function Footer() {
                 ['Radar Level Transmitters', '/products/radar-level-transmitters'],
                 ['Ultrasonic Level Sensors', '/products/ultrasonic-level-sensors'],
                 ['Pressure Sensors', '/products/pressure-sensors'],
-                ['Distance Sensors', '/products/distance-sensors'],
-                ['Environmental Sensors', '/products/environmental-sensors'],
+                ['Water Quality Sensors', '/products/water-quality-sensors'],
+                ['Flow Meters', '/products/flow-meters'],
+                ['Capacitive Level Sensors', '/products/capacitive-level-sensors'],
               ].map(([label, to]) => (
                 <li key={to}>
                   <Link to={to} className="flex items-center gap-1 hover:text-white transition-colors">

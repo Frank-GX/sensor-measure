@@ -9,35 +9,42 @@ const categories = [
     title: 'Radar Level Transmitters',
     description: 'FMCW 80GHz & 120GHz radar sensors for precise non-contact level measurement in harsh industrial environments.',
     icon: '📡',
-    items: ['80GHz FMCW Radar', '120GHz FMCW Radar', 'Guided Wave Radar', '26GHz Pulse Radar'],
+    items: ['80GHz FMCW Radar', '120GHz FMCW Radar', 'Guided Wave Radar', '80GHz High-Temp Gauge'],
   },
   {
     slug: 'ultrasonic-level-sensors',
     title: 'Ultrasonic Level Sensors',
     description: 'Cost-effective non-contact ultrasonic level measurement for water, wastewater, chemicals, and bulk solids.',
     icon: '🔊',
-    items: ['Level Transmitter 20m', 'Water Tank Sensor', 'Ultrasonic Distance Sensor'],
+    items: ['Level Transmitter 20m', 'Water Tank Sensor', 'Long-Range 30m', 'Compact Sensor'],
   },
   {
     slug: 'pressure-sensors',
     title: 'Pressure Sensors',
-    description: 'High-precision pressure transmitters, differential pressure sensors, and submersible level sensors.',
+    description: 'High-precision pressure transmitters, differential pressure sensors, submersible level sensors, and digital gauges.',
     icon: '⚡',
-    items: ['Pressure Transmitter 4-20mA', 'Differential Pressure', 'Submersible Level Sensor'],
+    items: ['Pressure Transmitter 4-20mA', 'Differential Pressure', 'Submersible Level', 'Digital Pressure Gauge'],
   },
   {
-    slug: 'distance-sensors',
-    title: 'Distance Sensors',
-    description: 'Laser and ultrasonic distance sensors for factory automation, positioning, and industrial measurement.',
-    icon: '📏',
-    items: ['Laser Distance 100m', 'Ultrasonic Distance 8m'],
+    slug: 'water-quality-sensors',
+    title: 'Water Quality Sensors',
+    description: 'pH/ORP, dissolved oxygen, turbidity, COD, and multi-parameter water quality monitors for environmental compliance.',
+    icon: '💧',
+    items: ['pH/ORP Sensor', 'Dissolved Oxygen', 'Turbidity Sensor', 'COD Sensor', 'Multi-Parameter Monitor'],
   },
   {
-    slug: 'environmental-sensors',
-    title: 'Environmental Sensors',
-    description: 'Temperature, humidity, CO₂ gas detectors and water quality sensors for comprehensive monitoring.',
-    icon: '🌡️',
-    items: ['Temperature & Humidity', 'CO₂ Gas Sensor', 'Water Quality Sensor'],
+    slug: 'flow-meters',
+    title: 'Flow Meters',
+    description: 'Electromagnetic, ultrasonic, and vortex flow meters for liquids, gases, and steam measurement.',
+    icon: '🌊',
+    items: ['Electromagnetic DN2600', 'Ultrasonic Clamp-on', 'Vortex Flow Meter'],
+  },
+  {
+    slug: 'capacitive-level-sensors',
+    title: 'Capacitive Level Sensors',
+    description: 'RF capacitive level transmitters and switches for high-temperature, high-pressure, and corrosive environments.',
+    icon: '📊',
+    items: ['Capacitive Level Transmitter', 'RF Capacitive Level Switch'],
   },
 ]
 
@@ -54,12 +61,14 @@ const applications = [
   { name: 'Oil & Gas', img: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=250&fit=crop' },
   { name: 'Water Treatment', img: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=400&h=250&fit=crop' },
   { name: 'Chemical Processing', img: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=250&fit=crop' },
+  { name: 'Water Quality Monitoring', img: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=400&h=250&fit=crop' },
+  { name: 'Flow Measurement', img: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=250&fit=crop' },
   { name: 'Food & Beverage', img: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=400&h=250&fit=crop' },
 ]
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'Sensor Measure — Industrial Sensor Manufacturer | Radar Level, Pressure & Distance Sensors'
+    document.title = 'Sensor Measure — Industrial Sensor Manufacturer | Radar Level, Pressure, Flow & Water Quality Sensors'
   }, [])
 
   return (
@@ -74,7 +83,7 @@ export default function Home() {
               <span className="block text-accent-500">for Global Measurement Solutions</span>
             </h1>
             <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl">
-              Professional manufacturer of radar level transmitters, ultrasonic level sensors, pressure sensors, and distance sensors. CE & RoHS certified with factory-direct pricing and global shipping.
+              Professional manufacturer of radar level transmitters, ultrasonic level sensors, pressure sensors, water quality sensors, flow meters, and capacitive level sensors. CE & RoHS certified with factory-direct pricing and global shipping.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/products" className="btn-primary bg-accent-500 hover:bg-accent-600 text-white border-0 text-lg px-8 py-4">

@@ -27,16 +27,16 @@ const solutions = [
   {
     icon: <Wheat size={28} />,
     title: 'Agriculture & Food Processing',
-    desc: 'Hygienic and reliable sensors for food safety and agricultural applications. 120GHz radar for small process vessels, food-grade pressure sensors with flush diaphragms, and environmental sensors for greenhouse and storage monitoring.',
-    products: ['120GHz FMCW Radar', 'Food-Grade Pressure Sensors', 'Temperature & Humidity Sensors'],
-    links: ['radar-level-transmitters', 'pressure-sensors', 'environmental-sensors'],
+    desc: 'Hygienic and reliable sensors for food safety and agricultural applications. 120GHz radar for small process vessels, food-grade pressure sensors with flush diaphragms, and water quality sensors for irrigation and greenhouse monitoring.',
+    products: ['120GHz FMCW Radar', 'Food-Grade Pressure Sensors', 'Water Quality Sensors'],
+    links: ['radar-level-transmitters', 'pressure-sensors', 'water-quality-sensors'],
   },
   {
     icon: <Zap size={28} />,
     title: 'Power Generation',
-    desc: 'High-temperature and high-pressure rated sensors for power plant applications. Guided wave radar for boiler drums, differential pressure transmitters for flow measurement, and CO₂ sensors for indoor air quality in control rooms.',
-    products: ['Guided Wave Radar', 'Differential Pressure Transmitters', 'CO₂ Gas Sensors'],
-    links: ['radar-level-transmitters', 'pressure-sensors', 'environmental-sensors'],
+    desc: 'High-temperature and high-pressure rated sensors for power plant applications. Guided wave radar for boiler drums, differential pressure transmitters for flow measurement, and vortex flow meters for steam distribution monitoring.',
+    products: ['Guided Wave Radar', 'Differential Pressure Transmitters', 'Vortex Flow Meters'],
+    links: ['radar-level-transmitters', 'pressure-sensors', 'flow-meters'],
   },
   {
     icon: <Ship size={28} />,

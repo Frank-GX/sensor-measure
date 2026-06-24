@@ -47,6 +47,13 @@ Unlike conventional 26GHz radar sensors, the 80GHz frequency provides a signific
 The SMRD-802 is virtually immune to process conditions that typically challenge other technologies. It performs consistently in the presence of dust, steam, condensation, foam, and temperature gradients. With stronger penetration capability, it can operate normally even in conditions of adhesion and condensation. The larger dynamic signal range ensures stable measurement of low dielectric constant media that other radar sensors struggle with.
 
 Available in two-wire (DC24V) and four-wire (DC12-24V / AC220V) configurations, with 4-20mA/HART or RS485 Modbus output, the SMRD-802 integrates seamlessly with any industrial control system.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'HART', 'RS485 Modbus'],
+          protectionGrade: 'IP67',
+          measuringRange: 'Up to 100m',
+          powerSupply: 'DC24V / AC220V',
+          applicationAreas: ['Chemical', 'Water Treatment', 'Oil & Gas', 'Food & Beverage'],
+        },
       },
       {
         slug: '80ghz-radar-level-gauge-high-temp-corrosive',
@@ -87,6 +94,13 @@ The 34mm PTFE lens antenna with overall filling provides superior chemical resis
 The SMRD-803 uses FFT (Fast Fourier Transform) to process the echo spectrum, calculating target distance from the frequency difference between transmitted and received signals. This advanced signal processing enables reliable measurement even in extremely complex working conditions with foam, steam, and turbulent surfaces.
 
 The four-wire configuration supports simultaneous 4-20mA analog and RS485 Modbus digital output, providing maximum flexibility for integration with modern control systems.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'HART', 'RS485 Modbus'],
+          protectionGrade: 'IP67',
+          measuringRange: 'Up to 100m',
+          powerSupply: 'DC24V / AC220V',
+          applicationAreas: ['Chemical', 'Oil & Gas', 'Pharmaceutical', 'Petrochemical'],
+        },
       },
       {
         slug: '120ghz-fmcw-radar-level-transmitter',
@@ -123,6 +137,13 @@ The four-wire configuration supports simultaneous 4-20mA analog and RS485 Modbus
 With sub-millimeter accuracy of ±0.5mm and a minimal dead zone of just 50mm, the SMRD-120G excels in precision applications where every millimeter matters. The ultra-high frequency enables excellent reflection from low dielectric media, making it suitable for materials that are challenging for conventional radar sensors.
 
 The compact 20mm lens antenna design is ideal for hygienic applications in the food, beverage, and pharmaceutical industries, where flush mounting and cleanability are essential requirements. The IP68 protection rating ensures reliable operation even in washdown environments.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'HART', 'RS485 Modbus'],
+          protectionGrade: 'IP68',
+          measuringRange: 'Up to 80m',
+          powerSupply: '24 VDC',
+          applicationAreas: ['Food & Beverage', 'Pharmaceutical', 'Chemical', 'Laboratory'],
+        },
       },
       {
         slug: 'guided-wave-radar-level-transmitter',
@@ -159,6 +180,13 @@ The compact 20mm lens antenna design is ideal for hygienic applications in the f
 Guided wave radar is the preferred choice for applications involving extreme process conditions — it handles temperatures up to +350°C and pressures up to 40 MPa, making it suitable for steam boilers, high-pressure reactors, and superheated liquid applications. It also excels at interface measurement, detecting the boundary between oil and water layers in separation tanks.
 
 Our SMGW-26G offers multiple probe configurations: rigid rod probes for shorter ranges and clean liquids, flexible cable probes for tall tanks up to 35 meters, and coaxial probes for low dielectric fluids and interface applications.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'HART', 'RS485 Modbus'],
+          protectionGrade: 'IP67',
+          measuringRange: 'Up to 35m',
+          powerSupply: '24 VDC',
+          applicationAreas: ['Oil & Gas', 'Chemical', 'Power Generation', 'Petrochemical'],
+        },
       },
     ],
   },
@@ -209,6 +237,13 @@ Our SMGW-26G offers multiple probe configurations: rigid rod probes for shorter 
 The ultra-wide supply voltage range of 3.3-30 VDC and low working current of ≤45 mA make the SMUS-20T suitable for a wide range of applications including battery-powered and solar-powered remote monitoring systems. The IP68 protection rating allows permanent immersion, while the PVC/PVDF/PTFE housing options provide chemical compatibility for aggressive media.
 
 The built-in temperature compensation sensor automatically adjusts for sound velocity changes due to ambient temperature variations, ensuring consistent accuracy across the entire operating temperature range of -25 to +70°C. Multiple output options — 4-20mA, 0-10V, 0-5V, RS485, NPN, and PNP — provide maximum integration flexibility with any control system.`,
+        filterTags: {
+          outputSignal: ['4-20mA', '0-10V', '0-5V', 'RS485', 'NPN', 'PNP'],
+          protectionGrade: 'IP68',
+          measuringRange: 'Up to 20m',
+          powerSupply: '3.3-30 VDC',
+          applicationAreas: ['Water Treatment', 'Chemical', 'Food & Beverage', 'Industrial'],
+        },
       },
       {
         slug: 'ultrasonic-level-sensor-water-tank',
@@ -245,6 +280,13 @@ The built-in temperature compensation sensor automatically adjusts for sound vel
 With a 10-meter maximum range, IP68 waterproof housing, and 0.1mm resolution, the SMUS-10W is perfectly suited for outdoor water tank installations. The built-in temperature compensation ensures accurate readings across seasonal temperature variations. Multiple output options including 4-20mA, RS485, and switching outputs allow direct integration with pump controllers, alarms, and SCADA systems.
 
 The low power consumption (≤45 mA) makes it ideal for solar-powered remote monitoring stations, while the compact PVC/ABS housing provides long-term durability in humid and wet environments.`,
+        filterTags: {
+          outputSignal: ['4-20mA', '0-10V', '0-5V', 'RS485', 'NPN', 'PNP'],
+          protectionGrade: 'IP68',
+          measuringRange: 'Up to 10m',
+          powerSupply: '3.3-30 VDC',
+          applicationAreas: ['Water Treatment', 'Agriculture', 'Industrial', 'Building Automation'],
+        },
       },
       {
         slug: 'ultrasonic-distance-sensor-long-range',
@@ -281,6 +323,57 @@ The low power consumption (≤45 mA) makes it ideal for solar-powered remote mon
 The sensor features three working modes: continuous measurement mode for standard applications, command-triggered measurement mode for on-demand readings, and ultra-low power mode with sleep consumption less than 0.3 mA — making it ideal for battery-powered LPWAN networks and IoT deployments where power efficiency is critical.
 
 The optional SFTN LCD display with green backlight provides local reading capability, while the 5-digit display shows measurement data in user-selectable units. The stainless steel housing option ensures durability in harsh industrial environments with vibration resistance rated at < ±0.05%/g at 500Hz.`,
+        filterTags: {
+          outputSignal: ['4-20mA', '0-10V', '0-5V', 'RS485', 'NPN', 'PNP'],
+          protectionGrade: 'IP65',
+          measuringRange: 'Up to 30m+',
+          powerSupply: '3.3-30 VDC',
+          applicationAreas: ['Industrial', 'Agriculture', 'IoT/Remote Monitoring', 'Water Treatment'],
+        },
+      },
+      {
+        slug: 'compact-ultrasonic-level-sensor',
+        name: 'Compact Ultrasonic Level Sensor',
+        model: 'SMUS-550',
+        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Measuring Range', value: '0.15 - 5 m (customizable to 10m)' },
+          { label: 'Accuracy', value: '≤1% F.S.' },
+          { label: 'Resolution', value: '0.1 mm' },
+          { label: 'Blind Zone', value: '150 - 250 mm' },
+          { label: 'Supply Voltage', value: '3.3-30 VDC' },
+          { label: 'Working Current', value: '≤ 45 mA' },
+          { label: 'Output Signal', value: '4-20mA / 0-10V / 0-5V / 0-3V / RS485 / NPN / PNP / TTL' },
+          { label: 'Process Temperature', value: '-25 to +70 °C' },
+          { label: 'Storage Temperature', value: '-40 to +85 °C' },
+          { label: 'Protection Grade', value: 'IP68' },
+          { label: 'Housing Material', value: 'PVC / PVDF / PTFE / ABS' },
+          { label: 'Temperature Compensation', value: 'Yes (built-in)' },
+          { label: 'Certification', value: 'CE, RoHS' },
+        ],
+        features: [
+          'Ultra-compact form factor for tight installation spaces',
+          'IP68 waterproof housing for direct immersion applications',
+          'Eight output signal options for maximum integration flexibility',
+          '0.1mm high resolution with automatic temperature compensation',
+          'Wide supply voltage range 3.3-30 VDC for versatile power options',
+          'PVDF/PTFE transducer options for corrosive chemical media',
+          'Low power consumption ideal for battery-powered deployments',
+          'Customizable measuring range and cable length',
+        ],
+        applications: ['Small tank level measurement', 'Object detection and positioning', 'Fill level in containers', 'Transparent object detection', 'Conveyor belt presence detection', 'Robot obstacle avoidance'],
+        description: `The SMUS-550 Compact Ultrasonic Level Sensor delivers reliable distance and level measurement in a space-efficient package. Designed for applications where installation space is limited, this sensor provides the same measurement performance as our full-size models in a significantly reduced footprint.
+
+Featuring eight output signal options — including 4-20mA, 0-10V, 0-5V, 0-3V, RS485, NPN, PNP, and TTL — the SMUS-550 is compatible with virtually any industrial control system. The 0.1mm resolution and built-in temperature compensation ensure precise measurements across varying environmental conditions.
+
+The IP68-rated housing performs reliably in dusty, humid, and wet environments. It is particularly effective for detecting transparent objects like glass bottles and clear plastic containers that challenge optical sensors. The PVC/PVDF/PTFE/ABS housing options provide chemical compatibility for a wide range of media.`,
+        filterTags: {
+          outputSignal: ['4-20mA', '0-10V', '0-5V', '0-3V', 'RS485', 'NPN', 'PNP', 'TTL'],
+          protectionGrade: 'IP68',
+          measuringRange: 'Up to 5m',
+          powerSupply: '3.3-30 VDC',
+          applicationAreas: ['Industrial', 'Automation', 'Chemical', 'Logistics'],
+        },
       },
     ],
   },
@@ -333,6 +426,13 @@ Key advantages of the MEMS technology include micro-shape design, strong output 
 With a measurement range spanning from -100 kPa vacuum to 100 MPa high pressure, and multiple accuracy options from ±0.2% to ±0.5% FS, the SMPT-140 covers virtually all industrial pressure measurement needs. The high-temperature version with water-cooling structure can withstand temperatures up to +1200°C for specialized applications in metallurgy and aerospace.
 
 The transmitter is available with various process connections (M3 to M10, G1/2, NPT), pressure types (gauge, sealed gauge, absolute), and electrical connections (fixed cable, aviation plug), providing maximum flexibility for OEM customization.`,
+        filterTags: {
+          outputSignal: ['4-20mA', '0-5V', '0-10V'],
+          protectionGrade: 'IP65',
+          measuringRange: 'Up to 100 MPa',
+          powerSupply: '5-36 VDC',
+          applicationAreas: ['Industrial', 'Aerospace', 'Oil & Gas', 'Biomedical'],
+        },
       },
       {
         slug: 'differential-pressure-transmitter',
@@ -367,6 +467,13 @@ The transmitter is available with various process connections (M3 to M10, G1/2, 
 The SMDP-3051 is commonly paired with primary flow elements (orifice plates, venturi tubes, pitot tubes) for flow measurement of liquids, gases, and steam. It also serves as an accurate tank level measurement device through hydrostatic pressure measurement, and as a filter condition monitor by measuring the pressure drop across filter elements.
 
 The large backlit LCD display and local pushbuttons allow field configuration without a communicator, while HART protocol enables full remote access to all parameters, diagnostics, and multi-variable data.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'HART', 'RS485'],
+          protectionGrade: 'IP67',
+          measuringRange: 'Up to 40 MPa',
+          powerSupply: '24 VDC',
+          applicationAreas: ['Oil & Gas', 'Chemical', 'Power Generation', 'Pharmaceutical'],
+        },
       },
       {
         slug: 'submersible-level-transmitter',
@@ -404,6 +511,13 @@ The large backlit LCD display and local pushbuttons allow field configuration wi
 With IP68 permanent immersion rating, 316L stainless steel construction, and a vented cable for barometric compensation, the SMSL-201C delivers reliable measurements even in harsh field conditions. The optional SFTN LCD display with white backlight and 5-digit reading provides convenient local indication, while the touch key with lock function prevents accidental operation during use.
 
 Available in standard ranges from 1 meter to 500 meters of water column, it covers applications from shallow groundwater monitoring to deep well level measurement. The submersible design makes it ideal for applications where top-mounted sensors are impractical — narrow boreholes, tanks without top access, and open water bodies.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'RS485'],
+          protectionGrade: 'IP68',
+          measuringRange: 'Up to 500m',
+          powerSupply: '24 VDC / Battery',
+          applicationAreas: ['Water Treatment', 'Environmental Monitoring', 'Mining', 'Agriculture'],
+        },
       },
       {
         slug: 'digital-pressure-gauge',
@@ -441,170 +555,28 @@ Available in standard ranges from 1 meter to 500 meters of water column, it cove
 This series is suitable for various industries including petroleum, water conservancy, chemical, metallurgy, electric power, light industry, scientific research, and environmental protection. It enables fluid pressure measurement in all weather conditions and with various corrosive fluids across diverse applications.
 
 The gauge features multiple range options, digital LCD/LED pressure display, convenient range debugging, reverse polarity protection, current limit protection, lightning strike and shock resistance. The compact size and high cost-performance ratio make it an ideal choice for industrial pressure monitoring. The touch key with lock function effectively improves key service life and prevents accidental operation during use.`,
+        filterTags: {
+          outputSignal: ['4-20mA'],
+          protectionGrade: 'IP65',
+          measuringRange: 'Up to 100 MPa',
+          powerSupply: '12-30 VDC / 220 VAC',
+          applicationAreas: ['Oil & Gas', 'Chemical', 'Power Generation', 'Water Treatment'],
+        },
       },
     ],
   },
 
-  'distance-sensors': {
-    title: 'Distance Sensors',
-    description: 'High-precision non-contact distance measurement sensors using laser and ultrasonic technology. Ideal for industrial automation, positioning, object detection, and level measurement. IP68 protection with millimeter-level accuracy.',
-    icon: '📏',
+  'water-quality-sensors': {
+    title: 'Water Quality Sensors',
+    description: 'Comprehensive water quality monitoring sensors for pH, ORP, dissolved oxygen, turbidity, COD, and multi-parameter measurement. Digital RS485 Modbus output with IP68 waterproof design for direct immersion in water and wastewater applications.',
+    icon: '💧',
     seo: {
-      title: 'Distance Sensor Manufacturer | Laser & Ultrasonic Distance Measurement',
-      description: 'Professional distance sensor manufacturer. Laser distance sensors with ±1mm accuracy, ultrasonic distance sensors with 0.1mm resolution. IP68 protection, 4-20mA/RS485 output. CE certified, OEM/ODM. Global shipping.',
+      title: 'Water Quality Sensor Manufacturer | pH, DO, Turbidity, COD Sensors',
+      description: 'Professional water quality sensor manufacturer. Online pH/ORP sensors, fluorescence dissolved oxygen sensors, turbidity sensors, COD sensors, multi-parameter water quality monitors. IP68, RS485 Modbus. CE certified.',
     },
     items: [
       {
-        slug: 'laser-distance-sensor',
-        name: 'Laser Distance Sensor',
-        model: 'SMLD-100',
-        image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop',
-        specs: [
-          { label: 'Technology', value: 'Laser Time-of-Flight (ToF)' },
-          { label: 'Measuring Range', value: '0.05 - 100 m (natural surface)' },
-          { label: 'Accuracy', value: '±1 mm' },
-          { label: 'Laser Class', value: 'Class 2 (eye-safe, 635nm red laser)' },
-          { label: 'Output Signal', value: '4-20mA / RS232 / RS485 / SSI' },
-          { label: 'Response Time', value: '< 10 ms' },
-          { label: 'Operating Temperature', value: '-10 to +50 °C' },
-          { label: 'Protection Grade', value: 'IP65' },
-          { label: 'Housing Material', value: 'Aluminum' },
-          { label: 'Power Supply', value: '24 VDC' },
-          { label: 'Certification', value: 'CE, RoHS' },
-        ],
-        features: [
-          'Precision laser ToF measurement with ±1mm accuracy',
-          '100-meter range on natural surfaces without reflector',
-          'Fast response time < 10ms for dynamic measurements',
-          'Multiple output interfaces for flexible integration',
-          'Eye-safe Class 2 laser — no special safety precautions required',
-          'Compact aluminum housing with IP65 protection',
-          'Works on almost any surface: dark, bright, rough, smooth',
-          'Heating option available for outdoor cold climate use',
-        ],
-        applications: ['Factory automation and positioning', 'Warehouse and logistics', 'Crane and hoist positioning', 'Fill level monitoring', 'Thickness measurement'],
-        description: `The SMLD-100 Laser Distance Sensor uses advanced laser Time-of-Flight technology to deliver fast, accurate distance measurements across a 100-meter range on natural surfaces. Unlike sensors that require reflectors or targets, the SMLD-100 works on virtually any surface — dark, bright, rough, or smooth.
-
-With ±1mm accuracy and sub-10ms response time, it is ideal for dynamic positioning applications in factory automation, crane positioning, robotic systems, and warehouse logistics. The eye-safe Class 2 red laser (635nm) eliminates the need for special safety equipment or operator training.
-
-Multiple output interfaces — 4-20mA analog, RS232, RS485 Modbus, and SSI — provide flexible integration options for PLCs, industrial computers, and custom controllers.`,
-      },
-      {
-        slug: 'ultrasonic-distance-sensor',
-        name: 'Ultrasonic Distance Sensor',
-        model: 'SMUD-550',
-        image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&h=400&fit=crop',
-        specs: [
-          { label: 'Technology', value: 'Ultrasonic Time-of-Flight' },
-          { label: 'Measuring Range', value: '0.15 - 5 m (customizable to 30m+)' },
-          { label: 'Accuracy', value: '≤1% F.S.' },
-          { label: 'Resolution', value: '0.1 mm' },
-          { label: 'Blind Zone', value: '150-250 mm' },
-          { label: 'Supply Voltage', value: '3.3-30 VDC' },
-          { label: 'Working Current', value: '≤ 45 mA' },
-          { label: 'Output Signal', value: '4-20mA / 0-10V / 0-5V / 0-3V / RS485 / NPN / PNP / TTL' },
-          { label: 'Operating Temperature', value: '-25 to +70 °C' },
-          { label: 'Storage Temperature', value: '-40 to +85 °C' },
-          { label: 'Protection Grade', value: 'IP68' },
-          { label: 'Housing Material', value: 'PVC / PVDF / PTFE / ABS' },
-          { label: 'Temperature Compensation', value: 'Yes (built-in)' },
-          { label: 'Certification', value: 'CE, RoHS' },
-        ],
-        features: [
-          'IP68 waterproof for harsh and wet environments',
-          '0.1mm high resolution with ≤1% FS accuracy',
-          'Ultra-wide supply voltage 3.3-30 VDC',
-          '8 output signal options for maximum integration flexibility',
-          'Built-in temperature compensation for accurate readings',
-          'Unaffected by target color, transparency, or surface finish',
-          'Works in dusty and humid environments',
-          'Customizable measuring range and cable length',
-        ],
-        applications: ['Object detection and positioning', 'Fill level in small tanks', 'Transparent object detection', 'Stack height monitoring', 'Conveyor belt presence detection', 'Robot obstacle avoidance'],
-        description: `The SMUD-550 Ultrasonic Distance Sensor provides reliable distance measurement and object detection for industrial automation applications. Using ultrasonic sound waves, it measures distance independent of target color, transparency, or surface reflectivity — properties that challenge optical sensors.
-
-With IP68-rated housing and operating temperature range of -25 to +70°C, the SMUD-550 performs reliably in dusty, humid, and dirty industrial environments where optical sensors may fail. It is particularly effective for detecting transparent objects like glass bottles, clear plastic containers, and transparent films.
-
-The sensor offers 8 output signal options including 4-20mA, 0-10V, 0-5V, 0-3V, RS485, NPN, PNP, and TTL, making it compatible with virtually any control system. The 0.1mm resolution and built-in temperature compensation ensure precise measurements across varying environmental conditions.`,
-      },
-    ],
-  },
-
-  'environmental-sensors': {
-    title: 'Environmental Sensors',
-    description: 'Comprehensive environmental monitoring sensors for water quality, temperature, humidity, gas detection, and air quality. Essential instruments for environmental compliance, process optimization, and industrial safety.',
-    icon: '🌡️',
-    seo: {
-      title: 'Environmental Sensor Manufacturer | Water Quality, Temperature, Gas Sensors',
-      description: 'Professional environmental sensor manufacturer. Water quality sensors (pH, COD, dissolved oxygen, turbidity), temperature/humidity transmitters, CO₂ gas sensors. CE certified. OEM/ODM available. Global shipping.',
-    },
-    items: [
-      {
-        slug: 'temperature-humidity-transmitter',
-        name: 'Temperature & Humidity Transmitter',
-        model: 'SMTH-485',
-        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop',
-        specs: [
-          { label: 'Temperature Range', value: '-40 to +125 °C' },
-          { label: 'Temperature Accuracy', value: '±0.2 °C (0-70 °C)' },
-          { label: 'Humidity Range', value: '0-100% RH' },
-          { label: 'Humidity Accuracy', value: '±2% RH (10-90% RH)' },
-          { label: 'Output Signal', value: 'RS485 Modbus / 4-20mA / 0-10V' },
-          { label: 'Sensor Element', value: 'Sensirion / Swiss digital sensor' },
-          { label: 'Response Time', value: '< 8s (τ63)' },
-          { label: 'Protection Grade', value: 'IP65' },
-          { label: 'Housing Material', value: 'PC / Aluminum' },
-          { label: 'Power Supply', value: '24 VDC' },
-          { label: 'Certification', value: 'CE, RoHS' },
-        ],
-        features: [
-          'Combined temperature and humidity in one compact sensor',
-          'Swiss-made Sensirion sensor element for long-term stability',
-          'RS485 Modbus RTU output for digital integration',
-          'Wall-mount, duct-mount, and remote probe versions available',
-          'LCD display option for local reading',
-          'Excellent long-term stability with minimal drift',
-          'Wide operating range for diverse applications',
-          'IP65 protection for harsh environments',
-        ],
-        applications: ['HVAC and building automation', 'Greenhouses and agriculture', 'Cold chain monitoring', 'Cleanrooms and laboratories', 'Server rooms and data centers'],
-        description: `The SMTH-485 Temperature and Humidity Transmitter combines precision temperature and relative humidity measurement in a single compact instrument. Using a Swiss-made Sensirion digital sensor element, it delivers industry-leading accuracy and long-term stability.
-
-Available in wall-mount, duct-mount, and remote probe configurations, the SMTH-485 adapts to various installation requirements. The RS485 Modbus RTU interface allows easy integration into building management systems, PLC networks, and IoT platforms.`,
-      },
-      {
-        slug: 'co2-gas-sensor',
-        name: 'CO₂ Gas Sensor / Transmitter',
-        model: 'SMGS-CO2',
-        image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&h=400&fit=crop',
-        specs: [
-          { label: 'Gas Type', value: 'Carbon Dioxide (CO₂)' },
-          { label: 'Detection Principle', value: 'NDIR (Non-Dispersive Infrared)' },
-          { label: 'Measuring Range', value: '0-2000 / 0-5000 / 0-10000 ppm' },
-          { label: 'Accuracy', value: '±50 ppm + 3% of reading' },
-          { label: 'Output Signal', value: 'RS485 Modbus / 4-20mA / Relay' },
-          { label: 'Operating Temperature', value: '0 to +50 °C' },
-          { label: 'Protection Grade', value: 'IP30 (indoor) / IP65 (duct)' },
-          { label: 'Power Supply', value: '24 VDC' },
-          { label: 'Certification', value: 'CE, RoHS' },
-        ],
-        features: [
-          'NDIR sensor technology with automatic baseline correction',
-          'Long sensor life > 10 years with minimal maintenance',
-          'Three relay outputs for alarm and ventilation control',
-          'Large LCD display with CO₂, temperature, and humidity',
-          'Wall-mount and duct-mount versions available',
-          'ABC (Automatic Baseline Correction) algorithm',
-          'Optional temperature and humidity measurement',
-          'Low power consumption',
-        ],
-        applications: ['Indoor air quality monitoring', 'HVAC demand-controlled ventilation', 'Greenhouses and agriculture', 'Office and classroom IAQ', 'Parking garage ventilation'],
-        description: `The SMGS-CO2 Carbon Dioxide Gas Sensor uses proven NDIR (Non-Dispersive Infrared) technology to provide accurate CO₂ concentration measurements for indoor air quality, building ventilation control, and environmental monitoring applications.
-
-The self-calibrating ABC (Automatic Baseline Correction) algorithm automatically compensates for sensor drift, maintaining accuracy over years of continuous operation with minimal maintenance. The sensor's expected lifetime exceeds 10 years under normal operating conditions.`,
-      },
-      {
-        slug: 'water-quality-ph-sensor',
+        slug: 'online-ph-orp-sensor',
         name: 'Online pH/ORP Sensor',
         model: 'SMWQ-500',
         image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop',
@@ -632,11 +604,441 @@ The self-calibrating ABC (Automatic Baseline Correction) algorithm automatically
           'PVC/glass construction for chemical resistance',
         ],
         applications: ['Water treatment plants', 'Industrial wastewater monitoring', 'Aquaculture and fisheries', 'Swimming pool water quality', 'Chemical process control', 'Environmental monitoring stations'],
-        description: `The SMWQ-500 Online pH/ORP Sensor is a digital water quality sensor designed for continuous monitoring of pH and Oxidation-Reduction Potential (ORP) in water and wastewater applications. With a measurement range of 0-14 pH and ±2000 mV ORP, it covers the full spectrum of water quality monitoring needs.
+        description: `The SMWQ-500 Online pH/ORP Sensor is a digital water quality instrument designed for continuous monitoring of pH and Oxidation-Reduction Potential (ORP) in water and wastewater applications. With a measurement range of 0-14 pH and ±2000 mV ORP, it covers the full spectrum of water quality monitoring needs.
 
 The sensor features RS485 Modbus RTU digital output and 4-20mA analog output, enabling direct integration with PLCs, DCS systems, and third-party monitoring platforms. The IP68 waterproof rating allows direct immersion in water, while the automatic temperature compensation ensures accurate readings across varying conditions.
 
 The optional automatic cleaning brush eliminates bubbles and fouling on the sensor surface, reducing maintenance frequency and ensuring long-term measurement stability. The 2-point and 3-point calibration options provide flexibility for different accuracy requirements.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'RS485 Modbus'],
+          protectionGrade: 'IP68',
+          measuringRange: 'pH 0-14 / ORP ±2000mV',
+          powerSupply: '12-24 VDC',
+          applicationAreas: ['Water Treatment', 'Aquaculture', 'Chemical', 'Environmental Monitoring'],
+        },
+      },
+      {
+        slug: 'fluorescence-dissolved-oxygen-sensor',
+        name: 'Fluorescence Dissolved Oxygen Sensor',
+        model: 'SMWQ-630',
+        image: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Measurement Principle', value: 'Ultraviolet Fluorescence Method' },
+          { label: 'Measuring Range', value: '0-20 mg/L (0-200% saturation)' },
+          { label: 'Accuracy', value: '±1%' },
+          { label: 'Response Time', value: '≤ 10 seconds' },
+          { label: 'Output Signal', value: 'RS485 Modbus RTU' },
+          { label: 'Power Supply', value: '12-24 VDC (±10%)' },
+          { label: 'Operating Temperature', value: '0 to +50 °C' },
+          { label: 'Max Working Pressure', value: '6 bar' },
+          { label: 'Protection Grade', value: 'IP68' },
+          { label: 'Housing Material', value: 'POM / 316L SS' },
+          { label: 'Probe Cable Length', value: '10m (5m/15m/30m customizable)' },
+          { label: 'Fluorescent Cap Life', value: '1 year' },
+          { label: 'Max Submersion Depth', value: '60 meters' },
+          { label: 'Certification', value: 'CE, Ex (optional)' },
+        ],
+        features: [
+          'Fluorescence lifetime technology — no electrolyte or polarization required',
+          'No oxygen consumption, unaffected by flow rate',
+          'Built-in temperature sensor with automatic compensation',
+          'Immune to chemical interferences such as sulfides',
+          'Low drift, fast response, highly accurate measurement',
+          'Maintenance-free operation with longer cycle life',
+          'Simple fluorescent cap replacement',
+          'RS485 Modbus RTU interface for network integration',
+        ],
+        applications: ['Wastewater treatment plants', 'Aquaculture and fisheries', 'Environmental water monitoring', 'Industrial process water', 'River and lake monitoring', 'Drinking water quality'],
+        description: `The SMWQ-630 Fluorescence Dissolved Oxygen Sensor employs next-generation fluorescence lifetime technology for accurate dissolved oxygen measurement. Unlike traditional electrochemical DO sensors, it requires no electrolyte, no polarization time, and consumes no oxygen — making it completely maintenance-free during operation.
+
+The sensor uses independently developed high-performance fluorescent materials that provide excellent stability and minimal drift. The built-in temperature sensor enables automatic compensation, ensuring accurate readings across varying environmental conditions. The sensor is immune to chemical interferences such as sulfides, which can affect traditional DO probes.
+
+With RS485 Modbus RTU output, the SMWQ-630 integrates seamlessly into monitoring networks without requiring a separate controller. The IP68-rated POM/316L SS housing supports submersion up to 60 meters, making it suitable for deep water monitoring applications. The fluorescent cap has a service life of approximately one year and can be easily replaced.`,
+        filterTags: {
+          outputSignal: ['RS485 Modbus'],
+          protectionGrade: 'IP68',
+          measuringRange: '0-20 mg/L',
+          powerSupply: '12-24 VDC',
+          applicationAreas: ['Water Treatment', 'Aquaculture', 'Environmental Monitoring', 'Industrial'],
+        },
+      },
+      {
+        slug: 'online-turbidity-sensor',
+        name: 'Online Turbidity Sensor',
+        model: 'SMWQ-310',
+        image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Measuring Principle', value: 'Scattering Method (90° angle)' },
+          { label: 'Measuring Range', value: '0-100 NTU' },
+          { label: 'Resolution', value: '0.1 NTU / 0.1 °C' },
+          { label: 'Accuracy', value: '±3% or ±2 NTU / ±0.5 °C' },
+          { label: 'Calibration Mode', value: 'Two-point calibration' },
+          { label: 'Temperature Compensation', value: 'Automatic (PT1000)' },
+          { label: 'Output Signal', value: 'RS485 Modbus RTU' },
+          { label: 'Power Supply', value: '12-24 VDC (±10%)' },
+          { label: 'Operating Temperature', value: '0 to +50 °C' },
+          { label: 'Max Working Pressure', value: '< 0.2 MPa' },
+          { label: 'Protection Grade', value: 'IP68' },
+          { label: 'Max Submersion Depth', value: '20 meters' },
+          { label: 'Power Consumption', value: '< 0.05 W' },
+          { label: 'Certification', value: 'CE' },
+        ],
+        features: [
+          '90° angle scattering principle with built-in temperature sensor',
+          'Fiber optic structure for strong anti-interference against external light',
+          'Infrared LED light source for high stability',
+          'RS485 Modbus RTU output for digital integration',
+          'IP68 waterproof for direct submersion up to 20m depth',
+          'Convenient, fast, stable, and easy to maintain',
+          'Automatic temperature compensation with PT1000 sensor',
+          'Two-point calibration for accurate measurements',
+        ],
+        applications: ['Industrial water quality monitoring', 'Wastewater treatment', 'Drinking water quality', 'River and stream monitoring', 'Environmental protection', 'Process water monitoring'],
+        description: `The SMWQ-310 Online Turbidity Sensor is designed based on the scattering light turbidimeter principle. When a beam of light enters a water sample, the light is scattered by turbidity material in the water. By measuring the intensity of scattered light in the vertical direction of the incident light and comparing it with internal calibration values, the turbidity is calculated and output after linearization.
+
+The sensor utilizes a 90° angle scattering principle with a fiber optic structure that provides strong resistance to external light interference. The infrared LED light source ensures high measurement stability and long service life. The built-in PT1000 temperature sensor enables automatic compensation for accurate readings across varying conditions.
+
+With RS485 Modbus RTU output, the SMWQ-310 integrates directly into PLCs, SCADA systems, and IoT monitoring platforms. The IP68-rated housing supports submersion up to 20 meters, while the ultra-low power consumption of less than 0.05 W makes it ideal for remote and solar-powered monitoring stations.`,
+        filterTags: {
+          outputSignal: ['RS485 Modbus'],
+          protectionGrade: 'IP68',
+          measuringRange: '0-100 NTU',
+          powerSupply: '12-24 VDC',
+          applicationAreas: ['Water Treatment', 'Environmental Monitoring', 'Industrial', 'Drinking Water'],
+        },
+      },
+      {
+        slug: 'cod-sensor-uv254',
+        name: 'COD Sensor (UV254 Absorption)',
+        model: 'SMWQ-150',
+        image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Measurement Principle', value: 'Dual-Wavelength UV Absorption (UV254)' },
+          { label: 'Measuring Range', value: '0.1-500 mg/L COD' },
+          { label: 'Accuracy', value: '±5% of reading' },
+          { label: 'Turbidity Resolution', value: '0.1 NTU' },
+          { label: 'Response Time (T90)', value: '< 10 seconds' },
+          { label: 'Output Signal', value: 'RS485 Modbus RTU' },
+          { label: 'Power Supply', value: '12-24 VDC' },
+          { label: 'Operating Temperature', value: '0 to +50 °C' },
+          { label: 'Protection Grade', value: 'IP68' },
+          { label: 'Cleaning', value: 'Automatic cleaning brush (optional)' },
+          { label: 'Light Source', value: 'UV LED with optical compensation' },
+          { label: 'Certification', value: 'CE' },
+        ],
+        features: [
+          'Dual-wavelength UV absorption method — no reagents required',
+          'Automatic cleaning brush for reduced maintenance',
+          'UV light compensation for stable long-term measurement',
+          'Built-in turbidity compensation for accurate COD readings',
+          'Fast response time under 10 seconds',
+          'RS485 Modbus RTU for direct digital integration',
+          'IP68 waterproof for direct immersion in water',
+          'Reagent-free operation reduces operating costs',
+        ],
+        applications: ['Wastewater treatment plants', 'Industrial effluent monitoring', 'River and lake water quality', 'Drinking water intake monitoring', 'Environmental compliance monitoring', 'Chemical process water'],
+        description: `The SMWQ-150 COD Sensor utilizes dual-wavelength UV254 absorption technology to measure Chemical Oxygen Demand (COD) in water without the need for chemical reagents. By measuring the absorption of ultraviolet light at 254nm wavelength — which is proportional to the organic carbon content in water — it provides real-time COD values with ±5% accuracy.
+
+The dual-wavelength design includes a reference wavelength that compensates for turbidity interference, ensuring accurate COD measurements even in turbid water. The automatic cleaning brush option removes fouling and bubbles from the optical window, significantly reducing maintenance frequency in dirty water applications.
+
+With a response time of less than 10 seconds and RS485 Modbus RTU output, the SMWQ-150 enables real-time water quality monitoring integration with PLC, SCADA, and IoT platforms. The reagent-free operation dramatically reduces operating costs compared to traditional laboratory COD analysis, while the IP68 housing allows direct immersion in water for continuous online monitoring.`,
+        filterTags: {
+          outputSignal: ['RS485 Modbus'],
+          protectionGrade: 'IP68',
+          measuringRange: '0.1-500 mg/L COD',
+          powerSupply: '12-24 VDC',
+          applicationAreas: ['Water Treatment', 'Environmental Monitoring', 'Chemical', 'Industrial'],
+        },
+      },
+      {
+        slug: 'multi-parameter-water-quality-monitor',
+        name: 'Multi-Parameter Water Quality Monitor',
+        model: 'SMWQ-800',
+        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Sensor Channels', value: 'Up to 6 digital sensors simultaneously' },
+          { label: 'Supported Parameters', value: 'DO, EC, Turbidity, pH, ORP, Chlorophyll, Oil-in-Water' },
+          { label: 'Output Signal', value: 'RS485 Modbus RTU / 4-20mA' },
+          { label: 'Display', value: '7" color touchscreen LCD' },
+          { label: 'Data Logging', value: 'Built-in, expandable via SD card' },
+          { label: 'Communication', value: 'RS485 / 4-20mA / GPRS / Wi-Fi (optional)' },
+          { label: 'Power Supply', value: '12-24 VDC / 220 VAC' },
+          { label: 'Protection Grade', value: 'IP65 (controller) / IP68 (sensors)' },
+          { label: 'Operating Temperature', value: '-10 to +55 °C' },
+          { label: 'Cleaning System', value: 'Automatic compressed air/water cleaning' },
+          { label: 'Certification', value: 'CE' },
+        ],
+        features: [
+          'Simultaneous connection of up to 6 digital sensors',
+          'Supports DO, EC, turbidity, pH, ORP, chlorophyll, and oil-in-water',
+          '7" color touchscreen for local display and configuration',
+          'Built-in data logging with expandable SD card storage',
+          'Automatic cleaning system for reduced maintenance',
+          'Multiple communication options: RS485, 4-20mA, GPRS, Wi-Fi',
+          'Modbus RTU protocol for SCADA/PLC integration',
+          'Customizable sensor configuration for specific monitoring needs',
+        ],
+        applications: ['Wastewater treatment plants', 'Surface water monitoring stations', 'Industrial discharge monitoring', 'Aquaculture water quality management', 'Drinking water source monitoring', 'Environmental protection compliance'],
+        description: `The SMWQ-800 Multi-Parameter Water Quality Monitoring System is a comprehensive solution for simultaneous measurement of multiple water quality parameters. The system supports up to 6 digital sensors concurrently, including dissolved oxygen, electrical conductivity, turbidity, pH, ORP, chlorophyll-a, and oil-in-water — providing a complete picture of water quality in a single integrated platform.
+
+The 7-inch color touchscreen controller provides intuitive local display, configuration, and data access. Built-in data logging with expandable SD card storage enables long-term unattended monitoring. The automatic cleaning system uses compressed air or water to periodically clean sensor surfaces, dramatically reducing maintenance frequency in dirty water applications.
+
+Multiple communication options — RS485 Modbus RTU, 4-20mA analog, GPRS, and Wi-Fi — provide flexible integration with existing SCADA, PLC, and cloud-based IoT platforms. The system can be customized with different sensor combinations to meet specific monitoring requirements across various water quality applications.`,
+        filterTags: {
+          outputSignal: ['RS485 Modbus', '4-20mA', 'GPRS', 'Wi-Fi'],
+          protectionGrade: 'IP65',
+          measuringRange: 'Multi-parameter',
+          powerSupply: '12-24 VDC / 220 VAC',
+          applicationAreas: ['Water Treatment', 'Environmental Monitoring', 'Aquaculture', 'Industrial'],
+        },
+      },
+    ],
+  },
+
+  'flow-meters': {
+    title: 'Flow Meters',
+    description: 'Industrial flow measurement instruments including electromagnetic, ultrasonic, and vortex flow meters. Suitable for conductive and non-conductive liquids, gases, and steam. High accuracy with multiple output and communication options.',
+    icon: '🌊',
+    seo: {
+      title: 'Flow Meter Manufacturer | Electromagnetic, Ultrasonic, Vortex Flow Meters',
+      description: 'Professional flow meter manufacturer. Electromagnetic flow meters DN10-DN2600, ultrasonic flow meters, vortex flow meters. ±0.2% accuracy, IP68, 4-20mA/RS485/HART output. CE certified. OEM/ODM. Global shipping.',
+    },
+    items: [
+      {
+        slug: 'electromagnetic-flow-meter',
+        name: 'Electromagnetic Flow Meter',
+        model: 'SMFM-2600',
+        image: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Diameter Range', value: 'DN10 - DN2600' },
+          { label: 'Accuracy', value: '±0.2% (customized) / ±0.5% (standard)' },
+          { label: 'Pressure Rating', value: '1.6 / 2.5 / 4.0 MPa (special)' },
+          { label: 'Temperature Range', value: '-20 to +160 °C' },
+          { label: 'Output Signal', value: '4-20mA / Pulse / 0-10V' },
+          { label: 'Communication', value: 'RS485 Modbus / HART' },
+          { label: 'Power Supply', value: '24 VDC / 220 VAC' },
+          { label: 'Protection Class', value: 'IP65 / IP68 (optional)' },
+          { label: 'Installation', value: 'Flange / Clamp-on / Thread' },
+          { label: 'Liner Material', value: 'PTFE / PFA / Rubber / Polyurethane' },
+          { label: 'Electrode Material', value: '316L SS / Hastelloy C / Titanium / Tantalum / Platinum' },
+          { label: 'Remote Transmission', value: 'GPRS wireless (optional)' },
+          { label: 'Certification', value: 'CE, ISO9001' },
+        ],
+        features: [
+          'Wide diameter range from DN10 to DN2600 for any pipe size',
+          'High accuracy ±0.2% for custody transfer applications',
+          'Multiple liner and electrode materials for chemical compatibility',
+          'No moving parts — maintenance-free and long service life',
+          'Not affected by fluid density, viscosity, temperature, or pressure',
+          'GPRS wireless remote monitoring capability',
+          'Bi-directional flow measurement support',
+          'IP68 optional for submerged installations',
+        ],
+        applications: ['Water and wastewater', 'Chemical and petrochemical', 'Acid and alkali liquids', 'Irrigation and agriculture', 'Mining and mineral processing', 'Food and beverage'],
+        description: `The SMFM-2600 Electromagnetic Flow Meter is a versatile flow measurement solution based on Faraday's law of electromagnetic induction. Suitable for conductive liquids, it measures flow velocity by detecting the voltage induced when conductive fluid passes through a magnetic field. With a diameter range from DN10 to DN2600, it accommodates everything from small process lines to large municipal water mains.
+
+The meter features no moving parts, ensuring maintenance-free operation and long service life. Measurement accuracy is unaffected by fluid density, viscosity, temperature, pressure, or flow profile distortions — making it ideal for challenging applications involving corrosive, abrasive, or high-solid-content liquids.
+
+Multiple liner materials (PTFE, PFA, rubber, polyurethane) and electrode materials (316L SS, Hastelloy C, titanium, tantalum, platinum) provide chemical compatibility for virtually any conductive liquid. The optional GPRS wireless module enables remote monitoring of flow data from any location, while the IP68 option supports submerged installation in manholes and underground vaults.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'RS485 Modbus', 'HART', 'Pulse'],
+          protectionGrade: 'IP65',
+          measuringRange: 'DN10-DN2600',
+          powerSupply: '24 VDC / 220 VAC',
+          applicationAreas: ['Water Treatment', 'Chemical', 'Agriculture', 'Mining', 'Food & Beverage'],
+        },
+      },
+      {
+        slug: 'ultrasonic-flow-meter',
+        name: 'Ultrasonic Flow Meter',
+        model: 'SMFM-U100',
+        image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Measurement Principle', value: 'Transit-Time Difference' },
+          { label: 'Pipe Diameter', value: 'DN15 - DN4000' },
+          { label: 'Accuracy', value: '±1.0% of reading' },
+          { label: 'Flow Velocity Range', value: '0.01 - 12 m/s' },
+          { label: 'Pressure Rating', value: '1.6 MPa (standard) / higher on request' },
+          { label: 'Temperature Range', value: '-40 to +160 °C' },
+          { label: 'Output Signal', value: '4-20mA / Pulse / RS485 Modbus' },
+          { label: 'Power Supply', value: '24 VDC / 220 VAC / Battery (portable)' },
+          { label: 'Protection Class', value: 'IP65 / IP68 (optional)' },
+          { label: 'Installation', value: 'Clamp-on / Insertion / Inline' },
+          { label: 'Pipe Material', value: 'Steel, SS, Cast Iron, PVC, Copper, Aluminum' },
+          { label: 'Data Logging', value: 'Built-in (100,000+ data points)' },
+          { label: 'Certification', value: 'CE' },
+        ],
+        features: [
+          'Non-invasive clamp-on installation — no pipe cutting required',
+          'Works on metal, plastic, and composite pipe materials',
+          'Bi-directional flow measurement with reverse flow detection',
+          'No pressure drop and no moving parts',
+          'Portable battery-powered version available for field surveys',
+          'Built-in data logger for long-term unattended monitoring',
+          'Multiple installation options: clamp-on, insertion, or inline',
+          'Suitable for clean liquids and moderately aerated fluids',
+        ],
+        applications: ['HVAC and energy monitoring', 'Water distribution networks', 'Industrial process monitoring', 'Leak detection systems', 'Irrigation and agriculture', 'Batch control and dosing'],
+        description: `The SMFM-U100 Ultrasonic Flow Meter uses the transit-time difference principle to measure flow velocity in full pipes. By comparing the travel time of ultrasonic pulses transmitted upstream and downstream, it calculates flow velocity with ±1.0% accuracy — without requiring any intrusion into the pipe.
+
+The clamp-on design enables quick and easy installation without cutting pipes or shutting down processes. Transducers are mounted externally on the pipe wall, making the SMFM-U100 ideal for retrofitting existing installations and for applications where pipe integrity must be maintained. The meter works on steel, stainless steel, cast iron, PVC, copper, and aluminum pipes.
+
+The portable battery-powered version is perfect for field surveys, flow verification, and temporary monitoring. The built-in data logger stores over 100,000 data points, enabling long-term unattended monitoring. With bi-directional flow measurement and reverse flow detection, it provides comprehensive flow data for custody transfer, leak detection, and energy management applications.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'RS485 Modbus', 'Pulse'],
+          protectionGrade: 'IP65',
+          measuringRange: 'DN15-DN4000',
+          powerSupply: '24 VDC / 220 VAC / Battery',
+          applicationAreas: ['HVAC', 'Water Treatment', 'Industrial', 'Agriculture'],
+        },
+      },
+      {
+        slug: 'vortex-flow-meter',
+        name: 'Vortex Flow Meter',
+        model: 'SMFM-V200',
+        image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Measurement Principle', value: 'Karman Vortex Street' },
+          { label: 'Pipe Diameter', value: 'DN15 - DN500' },
+          { label: 'Accuracy', value: '±1.0% (liquids) / ±1.5% (gases/steam)' },
+          { label: 'Flow Velocity Range', value: '0.3 - 10 m/s (liquids) / 5 - 80 m/s (gases)' },
+          { label: 'Pressure Rating', value: '1.6 / 2.5 / 4.0 MPa' },
+          { label: 'Temperature Range', value: '-40 to +350 °C' },
+          { label: 'Output Signal', value: '4-20mA / Pulse / RS485 Modbus / HART' },
+          { label: 'Power Supply', value: '24 VDC / 220 VAC' },
+          { label: 'Protection Class', value: 'IP65' },
+          { label: 'Body Material', value: 'SS304 / SS316L' },
+          { label: 'Temperature Compensation', value: 'Integrated RTD (optional)' },
+          { label: 'Display', value: 'LCD with backlight' },
+          { label: 'Certification', value: 'CE, ISO9001' },
+        ],
+        features: [
+          'Measures liquids, gases, and steam with a single meter',
+          'Integrated temperature and pressure compensation option',
+          'No moving parts — high reliability and low maintenance',
+          'Wide temperature range up to +350°C for steam applications',
+          'Stainless steel construction for harsh environments',
+          'HART protocol for remote configuration and diagnostics',
+          'LCD display with backlight for local reading',
+          'Suitable for saturated and superheated steam measurement',
+        ],
+        applications: ['Steam measurement and distribution', 'Compressed air systems', 'Industrial gas monitoring', 'Boiler feedwater', 'Chemical process control', 'Energy management systems'],
+        description: `The SMFM-V200 Vortex Flow Meter operates on the Karman vortex street principle — when fluid flows past a bluff body, alternating vortices are shed at a frequency proportional to the flow velocity. By detecting these vortex frequencies, the meter provides accurate flow measurement for liquids, gases, and steam.
+
+One of the key advantages of the vortex flow meter is its ability to measure steam at high temperatures up to +350°C, making it the preferred choice for steam distribution and boiler monitoring applications. The integrated temperature compensation option (with built-in RTD) enables mass flow calculation for saturated and superheated steam without additional instruments.
+
+With no moving parts, the SMFM-V200 offers high reliability and minimal maintenance. The stainless steel construction (SS304/SS316L) ensures durability in harsh industrial environments. HART protocol support enables remote configuration, diagnostics, and process variable access, while the LCD display with backlight provides convenient local reading.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'RS485 Modbus', 'HART', 'Pulse'],
+          protectionGrade: 'IP65',
+          measuringRange: 'DN15-DN500',
+          powerSupply: '24 VDC / 220 VAC',
+          applicationAreas: ['Power Generation', 'Chemical', 'Oil & Gas', 'Industrial'],
+        },
+      },
+    ],
+  },
+
+  'capacitive-level-sensors': {
+    title: 'Capacitive Level Sensors',
+    description: 'RF capacitive level transmitters and switches for continuous level measurement and point level detection in liquids and solids. Ideal for high-temperature, high-pressure, and corrosive environments where traditional sensors fail.',
+    icon: '📊',
+    seo: {
+      title: 'Capacitive Level Sensor Manufacturer | RF Capacitance Level Transmitter',
+      description: 'Professional capacitive level sensor manufacturer. RF capacitive level transmitters and switches for liquids and solids. IP67, HART/RS485/CAN bus, -50 to +250°C. CE certified. OEM/ODM available. Global shipping.',
+    },
+    items: [
+      {
+        slug: 'capacitive-level-transmitter',
+        name: 'Capacitive Level Transmitter',
+        model: 'SMCL-600',
+        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Detection Range', value: '0.01 - 30 m' },
+          { label: 'Accuracy', value: '0.2% FS / 0.5% FS' },
+          { label: 'Pressure Range', value: '-0.1 to 32 MPa' },
+          { label: 'Probe Temperature', value: '-50 to +250 °C' },
+          { label: 'Ambient Temperature', value: '-20 to +60 °C' },
+          { label: 'Output Signal', value: '4-20mA / HART / RS485 / CAN Bus' },
+          { label: 'Power Supply', value: '12-28 VDC (safety barrier powered)' },
+          { label: 'Protection Grade', value: 'IP67' },
+          { label: 'Wetted Material', value: '316 SS / 1Cr18Ni9Ti / PTFE' },
+          { label: 'Long-term Stability', value: '≤ 0.2% FS / year' },
+          { label: 'Temperature Drift', value: '≤ 0.02% FS / °C (0-70°C)' },
+          { label: 'Explosion-proof', value: 'Exia IIC T6 / Exd IIC T5 (optional)' },
+          { label: 'Mounting', value: 'M20×1.5 / M27×2 / Flange DN25/DN40/DN50' },
+          { label: 'Certification', value: 'CE' },
+        ],
+        features: [
+          'No movable or elastic parts — high reliability, minimal maintenance',
+          'Suitable for high-temperature, high-pressure, and corrosive environments',
+          'Advanced RF capacitive sensing circuit with temperature compensation',
+          'Self-calibration: full-range zero and span automatic calibration',
+          'Multiple communication protocols: HART, CAN bus, RS485',
+          'Measurement unaffected by liquid temperature, density, or container shape',
+          'Overcurrent, overvoltage, and reverse polarity protection',
+          'Replaces float, submersible, and differential pressure transmitters',
+        ],
+        applications: ['Oil and fuel tanks', 'Chemical reactors and storage', 'Boiler water level', 'Acid and alkali solutions', 'Water treatment plants', 'Cement and powder silos'],
+        description: `The SMCL-600 Capacitive Level Transmitter is designed for continuous level detection of liquids and solids in harsh conditions including high temperature, high pressure, high corrosion, crystallization, and plugging. It provides a reliable alternative to traditional float-type, submersible, and differential pressure level transmitters.
+
+The transmitter features no movable or elastic components, resulting in exceptional reliability and impact resistance with minimal maintenance requirements. The advanced RF capacitive sensing circuit is precisely compensated for temperature and corrected for linearity, outputting a standardized 4-20mA signal. Configuration is flexible with HART, CAN bus, or RS485 communication protocols.
+
+The self-calibration feature enables users to perform "zero" and "range" automatic calibration using two keys, allowing easy adaptation to diverse and complex application conditions. The measurement is not affected by the liquid's temperature, specific gravity, container shape, or pressure — making it ideal for applications where other technologies struggle.
+
+With a pressure range up to 32 MPa and probe temperature rating of -50 to +250°C, the SMCL-600 handles the most extreme process conditions. Multiple wetted material options (316 SS, 1Cr18Ni9Ti, PTFE) ensure chemical compatibility for virtually any medium.`,
+        filterTags: {
+          outputSignal: ['4-20mA', 'HART', 'RS485', 'CAN Bus'],
+          protectionGrade: 'IP67',
+          measuringRange: 'Up to 30m',
+          powerSupply: '12-28 VDC',
+          applicationAreas: ['Oil & Gas', 'Chemical', 'Power Generation', 'Water Treatment'],
+        },
+      },
+      {
+        slug: 'rf-capacitive-level-switch',
+        name: 'RF Capacitive Level Switch',
+        model: 'SMCL-500',
+        image: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Detection Principle', value: 'RF Capacitance' },
+          { label: 'Probe Length', value: '100mm - 3000mm (customizable)' },
+          { label: 'Probe Material', value: 'PTFE / 316 SS / PFA coated' },
+          { label: 'Pressure Range', value: '-0.1 to 4.0 MPa' },
+          { label: 'Probe Temperature', value: '-40 to +200 °C' },
+          { label: 'Output Signal', value: 'SPDT Relay / NPN / PNP' },
+          { label: 'Power Supply', value: '24 VDC / 220 VAC' },
+          { label: 'Protection Grade', value: 'IP66' },
+          { label: 'Response Time', value: '< 0.5 seconds' },
+          { label: 'Sensitivity', value: 'Adjustable (1-50pF)' },
+          { label: 'Time Delay', value: '0-10 seconds adjustable' },
+          { label: 'LED Indication', value: 'Status LED (red/green)' },
+          { label: 'Explosion-proof', value: 'Exd IIC T6 (optional)' },
+          { label: 'Certification', value: 'CE' },
+        ],
+        features: [
+          'Point level detection for liquids, powders, and granular solids',
+          'Adjustable sensitivity for different media dielectric constants',
+          'PTFE coated probe for aggressive chemical media',
+          'SPDT relay output for direct alarm and control circuit integration',
+          'Adjustable time delay to prevent false triggering from turbulence',
+          'LED status indication for quick visual diagnostics',
+          'No calibration required for many applications',
+          'Compact design for easy mounting in small nozzles',
+        ],
+        applications: ['High and low level alarms', 'Pump dry-run protection', 'Silo blockage detection', 'Overflow prevention', 'Dry powder and granular solids', 'Interface detection'],
+        description: `The SMCL-500 RF Capacitive Level Switch provides reliable point level detection for liquids, powders, and granular solids. When the probe comes into contact with the measured medium, the capacitance change is detected by the RF circuit, triggering the output relay — making it ideal for high/low level alarms, pump protection, and overflow prevention.
+
+The adjustable sensitivity (1-50pF) accommodates different media dielectric constants, from low-dielectric powders to high-dielectric liquids. The PTFE-coated probe option provides excellent chemical resistance for aggressive media such as acids, alkalis, and solvents. The adjustable time delay (0-10 seconds) prevents false triggering caused by surface turbulence or splashing.
+
+With SPDT relay output, the SMCL-500 integrates directly into alarm circuits, PLC inputs, and motor control circuits without additional interfaces. The LED status indicator provides quick visual confirmation of switch status — green for normal, red for alarm. The optional explosion-proof certification (Exd IIC T6) enables use in hazardous area applications.`,
+        filterTags: {
+          outputSignal: ['SPDT Relay', 'NPN', 'PNP'],
+          protectionGrade: 'IP66',
+          measuringRange: 'Point Level Detection',
+          powerSupply: '24 VDC / 220 VAC',
+          applicationAreas: ['Oil & Gas', 'Chemical', 'Industrial', 'Cement & Powder'],
+        },
       },
     ],
   },

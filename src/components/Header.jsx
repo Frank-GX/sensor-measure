@@ -11,8 +11,9 @@ const navLinks = [
       { to: '/products/radar-level-transmitters', label: 'Radar Level Transmitters' },
       { to: '/products/ultrasonic-level-sensors', label: 'Ultrasonic Level Sensors' },
       { to: '/products/pressure-sensors', label: 'Pressure Sensors' },
-      { to: '/products/distance-sensors', label: 'Distance Sensors' },
-      { to: '/products/environmental-sensors', label: 'Environmental Sensors' },
+      { to: '/products/water-quality-sensors', label: 'Water Quality Sensors' },
+      { to: '/products/flow-meters', label: 'Flow Meters' },
+      { to: '/products/capacitive-level-sensors', label: 'Capacitive Level Sensors' },
     ]
   },
   { to: '/blog', label: 'Blog' },
