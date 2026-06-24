@@ -1,86 +1,128 @@
 const products = {
   'radar-level-transmitters': {
     title: 'Radar Level Transmitters',
-    description: 'High-accuracy non-contact level measurement using FMCW and pulse radar technology. Ideal for harsh industrial environments with dust, steam, high temperature and pressure.',
+    description: 'High-accuracy non-contact level measurement using FMCW and pulse radar technology. 80GHz and 120GHz radar sensors for liquids and solids in harsh industrial environments with dust, steam, high temperature and pressure.',
     icon: '📡',
     seo: {
-      title: 'Radar Level Transmitter Manufacturer | FMCW & 80GHz Radar Sensors',
-      description: 'Professional radar level transmitter manufacturer. FMCW 80GHz & 120GHz radar level sensors for liquids and solids. CE certified, OEM/ODM available. Global shipping.',
+      title: 'Radar Level Transmitter Manufacturer | 80GHz FMCW Radar Level Sensor',
+      description: 'Professional radar level transmitter manufacturer. 80GHz FMCW radar level sensors, 120GHz radar, guided wave radar, 26GHz pulse radar. ±1mm accuracy, IP67, CE certified. OEM/ODM available. Global shipping.',
     },
     items: [
       {
         slug: '80ghz-fmcw-radar-level-transmitter',
         name: '80GHz FMCW Radar Level Transmitter',
-        model: 'SMRD-80G',
+        model: 'SMRD-802',
         image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop',
         specs: [
-          { label: 'Frequency', value: '76-81 GHz (FMCW)' },
-          { label: 'Measuring Range', value: '0.1 - 120 m' },
-          { label: 'Accuracy', value: '±1 mm' },
+          { label: 'Frequency', value: '80GHz (FMCW)' },
+          { label: 'Measuring Range', value: '0.1 - 100 m' },
+          { label: 'Accuracy', value: '±1mm (range ≤35m) / ±5mm (35-100m)' },
           { label: 'Beam Angle', value: '3°' },
+          { label: 'Antenna Size', value: '32mm lens antenna' },
+          { label: 'Antenna Material', value: 'PTFE' },
           { label: 'Output Signal', value: '4-20mA / HART / RS485 Modbus' },
-          { label: 'Process Temperature', value: '-40 to +200 °C' },
-          { label: 'Process Pressure', value: '-0.1 to 4.0 MPa' },
+          { label: 'Process Temperature', value: '-40 to +110 °C' },
+          { label: 'Process Pressure', value: '-0.1 to 1.6 MPa' },
           { label: 'Protection Grade', value: 'IP67' },
-          { label: 'Housing Material', value: 'Aluminum / 316L SS' },
-          { label: 'Antenna Material', value: 'PTFE / 316L SS' },
-          { label: 'Power Supply', value: '24 VDC (18-36 VDC)' },
-          { label: 'Certification', value: 'CE, RoHS, Ex ia IIC T6 (optional)' },
+          { label: 'Power Supply', value: 'DC24V (two-wire) / DC12-24V / AC220V (four-wire)' },
+          { label: 'Housing Material', value: 'Aluminum / Stainless Steel / Plastic' },
+          { label: 'Explosion-proof', value: 'Exia IIC T6 Ga / Exd IIC T6 Gb (optional)' },
+          { label: 'Certification', value: 'CE, ISO9001, RoHS' },
         ],
         features: [
           '80GHz FMCW technology with ultra-narrow 3° beam angle for precise targeting',
-          'Non-contact measurement, unaffected by dust, steam, foam, or turbulence',
-          'Measuring range up to 120 meters with ±1mm accuracy',
-          'Compact antenna design fits in small tank nozzles (DN40+)',
-          'Bluetooth wireless commissioning via smartphone app',
-          'Built-in echo display and diagnostic functions',
-          'Suitable for liquids, solids, powders, and granules',
-          'Optional Ex-proof certification for hazardous areas',
+          '32mm PTFE lens antenna — smaller size fits narrow tank nozzles (DN50+)',
+          'Non-contact measurement, unaffected by dust, steam, foam, condensation or turbulence',
+          'Measuring range up to 100 meters with ±1mm accuracy',
+          'Multiple measurement modes including fast measurement mode for dynamic applications',
+          'Stronger penetration capability — works normally even with adhesion and condensation',
+          'Larger dynamic signal range for stable measurement of low dielectric constant media',
+          'Two-wire and four-wire power supply options for flexible installation',
         ],
-        applications: ['Chemical storage tanks', 'Silos and hoppers', 'Oil and gas tanks', 'Water treatment', 'Cement and aggregates'],
-        description: `The SMRD-80G 80GHz FMCW Radar Level Transmitter represents the latest generation of high-frequency radar technology for industrial level measurement. Operating in the 76-81 GHz frequency band with Frequency Modulated Continuous Wave (FMCW) technology, it delivers exceptional measurement precision and reliability even in the most challenging process conditions.
+        applications: ['Chemical storage tanks', 'Water treatment plants', 'Oil and gas tanks', 'Food and beverage tanks', 'Cement and aggregates silos', 'Pharmaceutical vessels'],
+        description: `The SMRD-802 80GHz FMCW Radar Level Transmitter represents the latest generation of high-frequency radar technology for industrial level measurement. Operating at 80GHz with Frequency Modulated Continuous Wave (FMCW) technology, it transmits a high-frequency radar signal with linearly increasing frequency. The reflected signal is received by the same antenna, and the frequency difference between transmitted and received signals is proportional to the measured distance.
 
-Unlike conventional 26GHz radar sensors, the 80GHz frequency provides a significantly narrower beam angle of just 3°, allowing the sensor to avoid internal tank obstructions such as agitators, heating coils, and ladders. This makes it ideal for installations in small tanks, narrow silos, and vessels with complex internal structures.
+Unlike conventional 26GHz radar sensors, the 80GHz frequency provides a significantly narrower 3° beam angle with a compact 32mm PTFE lens antenna. This allows the sensor to avoid internal tank obstructions such as agitators, heating coils, and ladders, making it ideal for installations in small tanks, narrow silos, and vessels with complex internal structures.
 
-The SMRD-80G is virtually immune to process conditions that typically challenge other technologies. It performs consistently in the presence of dust, steam, condensation, foam, and temperature gradients — conditions where ultrasonic sensors often fail. With a measurement range of up to 120 meters and ±1mm accuracy, it handles everything from small day tanks to massive storage silos.
+The SMRD-802 is virtually immune to process conditions that typically challenge other technologies. It performs consistently in the presence of dust, steam, condensation, foam, and temperature gradients. With stronger penetration capability, it can operate normally even in conditions of adhesion and condensation. The larger dynamic signal range ensures stable measurement of low dielectric constant media that other radar sensors struggle with.
 
-Bluetooth connectivity enables wireless setup and diagnostics via a smartphone app, eliminating the need for physical access to the transmitter in hazardous or hard-to-reach locations. The built-in echo curve display and diagnostic tools simplify troubleshooting and commissioning.`,
+Available in two-wire (DC24V) and four-wire (DC12-24V / AC220V) configurations, with 4-20mA/HART or RS485 Modbus output, the SMRD-802 integrates seamlessly with any industrial control system.`,
+      },
+      {
+        slug: '80ghz-radar-level-gauge-high-temp-corrosive',
+        name: '80GHz Radar Level Gauge for High Temp & Corrosive Tanks',
+        model: 'SMRD-803',
+        image: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Frequency', value: '80GHz (FMCW)' },
+          { label: 'Measuring Range', value: '0.1 - 100 m' },
+          { label: 'Accuracy', value: '±1mm (range ≤35m) / ±5mm (35-100m)' },
+          { label: 'Beam Angle', value: '3°' },
+          { label: 'Antenna Size', value: '34mm lens antenna' },
+          { label: 'Antenna Material', value: 'PTFE (overall filling)' },
+          { label: 'Output Signal', value: '4-20mA / HART / RS485 Modbus (four-wire)' },
+          { label: 'Process Temperature', value: '-40 to +130 °C' },
+          { label: 'Process Pressure', value: '-0.1 to 2.5 MPa' },
+          { label: 'Protection Grade', value: 'IP67' },
+          { label: 'Power Supply', value: 'DC24V (two-wire) / DC12-24V / AC220V (four-wire)' },
+          { label: 'Housing Material', value: 'Aluminum / Stainless Steel' },
+          { label: 'Explosion-proof', value: 'Exia IIC T6 Ga / Exd IIC T6 Gb (optional)' },
+          { label: 'Certification', value: 'CE, ISO9001, RoHS' },
+        ],
+        features: [
+          'Specifically designed for strong corrosive liquids, steam, and foam conditions',
+          'Higher process temperature rating up to +130°C for demanding applications',
+          'Higher pressure rating up to 2.5 MPa for pressurized vessels',
+          '34mm PTFE lens antenna with overall filling for superior chemical resistance',
+          'Multiple lens antenna options (32mm/42mm/76mm) for different beam angles (7°/6°/3°)',
+          'Millimeter wave radar with minimum blind zone of only 0.05m',
+          'FFT echo spectrum analysis for reliable measurement in complex conditions',
+          'Four-wire configuration supports simultaneous 4-20mA and RS485 Modbus output',
+        ],
+        applications: ['Strong corrosive chemical tanks', 'High-temperature process vessels', 'Steam and foam environments', 'Acid and alkali storage', 'Petrochemical reactors', 'Pharmaceutical fermentation tanks'],
+        description: `The SMRD-803 is an enhanced 80GHz FMCW radar level gauge specifically engineered for high-temperature, high-pressure, and highly corrosive tank environments. Building on the proven SMRD-802 platform, it extends process temperature capability to +130°C and pressure rating to 2.5 MPa, making it suitable for the most demanding industrial applications.
+
+The 34mm PTFE lens antenna with overall filling provides superior chemical resistance against strong acids, alkalis, and other aggressive media. Multiple lens antenna diameter options (32mm/42mm/76mm) are available, offering beam angles from 3° to 7° to suit different tank geometries and installation requirements. The minimum measurement blind zone of only 0.05m enables measurement close to the antenna.
+
+The SMRD-803 uses FFT (Fast Fourier Transform) to process the echo spectrum, calculating target distance from the frequency difference between transmitted and received signals. This advanced signal processing enables reliable measurement even in extremely complex working conditions with foam, steam, and turbulent surfaces.
+
+The four-wire configuration supports simultaneous 4-20mA analog and RS485 Modbus digital output, providing maximum flexibility for integration with modern control systems.`,
       },
       {
         slug: '120ghz-fmcw-radar-level-transmitter',
         name: '120GHz FMCW Radar Level Transmitter',
         model: 'SMRD-120G',
-        image: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=600&h=400&fit=crop',
+        image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop',
         specs: [
           { label: 'Frequency', value: '120-126 GHz (FMCW)' },
           { label: 'Measuring Range', value: '0.05 - 80 m' },
           { label: 'Accuracy', value: '±0.5 mm' },
           { label: 'Beam Angle', value: '1.5°' },
+          { label: 'Antenna Size', value: '20mm lens antenna' },
+          { label: 'Antenna Material', value: 'PTFE / 316L SS' },
           { label: 'Output Signal', value: '4-20mA / HART / RS485 Modbus' },
           { label: 'Process Temperature', value: '-40 to +200 °C' },
           { label: 'Process Pressure', value: '-0.1 to 2.5 MPa' },
           { label: 'Protection Grade', value: 'IP68' },
-          { label: 'Housing Material', value: 'Aluminum / 316L SS' },
-          { label: 'Antenna Material', value: 'PTFE / 316L SS' },
           { label: 'Power Supply', value: '24 VDC (18-36 VDC)' },
           { label: 'Certification', value: 'CE, RoHS' },
         ],
         features: [
           'Industry-leading 120GHz FMCW technology with ultra-narrow 1.5° beam',
           'Sub-millimeter accuracy (±0.5mm) for precision applications',
-          'Perfect for very small tanks and narrow spaces',
+          '20mm compact lens antenna — perfect for very small tanks and narrow spaces',
           'Minimal dead zone of only 50mm',
           'Excellent performance on low dielectric media',
-          'Bluetooth app configuration',
-          'Compact and lightweight design',
+          'IP68 protection for washdown and harsh environments',
           'Ideal for hygienic and pharmaceutical applications',
+          'Flush-mount antenna design for cleanability',
         ],
-        applications: ['Food and beverage processing', 'Pharmaceutical manufacturing', 'Small process vessels', 'Hygienic applications', 'Precision chemical dosing'],
+        applications: ['Food and beverage processing', 'Pharmaceutical manufacturing', 'Small process vessels', 'Hygienic applications', 'Precision chemical dosing', 'Laboratory reactors'],
         description: `The SMRD-120G is our premium 120GHz FMCW radar level transmitter, pushing the boundaries of high-frequency radar measurement. Operating at 120-126 GHz, it provides an industry-leading 1.5° beam angle — the narrowest available — making it the perfect solution for small tanks, narrow nozzles, and vessels with tight internal clearances.
 
 With sub-millimeter accuracy of ±0.5mm and a minimal dead zone of just 50mm, the SMRD-120G excels in precision applications where every millimeter matters. The ultra-high frequency enables excellent reflection from low dielectric media, making it suitable for materials that are challenging for conventional radar sensors.
 
-The compact lens antenna design is ideal for hygienic applications in the food, beverage, and pharmaceutical industries, where flush mounting and cleanability are essential requirements. The IP68 protection rating ensures reliable operation even in washdown environments.`,
+The compact 20mm lens antenna design is ideal for hygienic applications in the food, beverage, and pharmaceutical industries, where flush mounting and cleanability are essential requirements. The IP68 protection rating ensures reliable operation even in washdown environments.`,
       },
       {
         slug: 'guided-wave-radar-level-transmitter',
@@ -103,67 +145,31 @@ The compact lens antenna design is ideal for hygienic applications in the food, 
         ],
         features: [
           'TDR guided wave technology with direct contact measurement',
-          'Unaffected by foam, vapor, and turbulence',
+          'Completely unaffected by foam, vapor, dust, and turbulence',
           'Excellent for low dielectric liquids and interface measurement',
-          'Wide temperature range up to +350°C',
-          'High pressure rating up to 40 MPa',
+          'Wide temperature range up to +350°C for extreme process conditions',
+          'High pressure rating up to 40 MPa for high-pressure vessels',
           'Rod, cable, and coaxial probe options for various applications',
           'Suitable for bypass chambers and stilling wells',
-          'Optional high-temperature and high-pressure configurations',
+          'Measures both level and interface simultaneously',
         ],
-        applications: ['Oil-water interface measurement', 'High temperature/pressure vessels', 'Bypass chambers', 'LPG and LNG storage', 'Steam boilers'],
-        description: `The SMGW-26G Guided Wave Radar Level Transmitter uses Time Domain Reflectometry (TDR) technology, where a microwave pulse is guided along a probe that contacts the measured medium. This direct-contact approach makes it completely immune to surface conditions such as foam, vapor, and turbulence that can affect non-contact radar sensors.
+        applications: ['Oil-water interface measurement', 'High temperature/pressure vessels', 'Bypass chambers', 'LPG and LNG storage', 'Steam boilers', 'Reactors and autoclaves'],
+        description: `The SMGW-26G Guided Wave Radar Level Transmitter uses Time Domain Reflectometry (TDR) technology, where a microwave pulse is guided along a probe that contacts the measured medium. This direct-contact approach makes it completely immune to surface conditions such as foam, vapor, dust, and turbulence that can affect non-contact radar sensors.
 
 Guided wave radar is the preferred choice for applications involving extreme process conditions — it handles temperatures up to +350°C and pressures up to 40 MPa, making it suitable for steam boilers, high-pressure reactors, and superheated liquid applications. It also excels at interface measurement, detecting the boundary between oil and water layers in separation tanks.
 
 Our SMGW-26G offers multiple probe configurations: rigid rod probes for shorter ranges and clean liquids, flexible cable probes for tall tanks up to 35 meters, and coaxial probes for low dielectric fluids and interface applications.`,
-      },
-      {
-        slug: '26ghz-pulse-radar-level-transmitter',
-        name: '26GHz Pulse Radar Level Transmitter',
-        model: 'SMPR-26G',
-        image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop',
-        specs: [
-          { label: 'Frequency', value: '26 GHz (Pulse)' },
-          { label: 'Measuring Range', value: '0.3 - 70 m' },
-          { label: 'Accuracy', value: '±5 mm' },
-          { label: 'Beam Angle', value: '8°' },
-          { label: 'Output Signal', value: '4-20mA / HART / RS485 Modbus' },
-          { label: 'Process Temperature', value: '-40 to +150 °C' },
-          { label: 'Process Pressure', value: '-0.1 to 3.0 MPa' },
-          { label: 'Protection Grade', value: 'IP67' },
-          { label: 'Housing Material', value: 'Aluminum' },
-          { label: 'Antenna Material', value: 'PTFE / 316L SS' },
-          { label: 'Power Supply', value: '24 VDC' },
-          { label: 'Certification', value: 'CE, RoHS' },
-        ],
-        features: [
-          'Cost-effective 26GHz pulse radar technology',
-          'Reliable performance in standard industrial applications',
-          'Measuring range up to 70 meters',
-          'Simple commissioning and operation',
-          'Good chemical resistance with PTFE antenna',
-          'Proven technology with millions of installations worldwide',
-          'Compact design with horn antenna options',
-          'Low cost of ownership',
-        ],
-        applications: ['Storage tanks', 'Water treatment', 'Chemical processing', 'Bulk solids storage', 'General industrial'],
-        description: `The SMPR-26G 26GHz Pulse Radar Level Transmitter is our cost-effective radar solution for standard industrial level measurement applications. Using proven pulse radar technology at 26GHz, it delivers reliable performance with excellent value for general-purpose applications where extreme precision is not required.
-
-The 26GHz frequency provides a good balance of beam focusing and resistance to condensation, making it suitable for a wide range of liquid and solid applications. The modular horn antenna design allows antenna size selection based on the application range and tank connection requirements.
-
-This transmitter is ideal for customers who need the benefits of non-contact radar measurement — reliability, low maintenance, and versatility — without the premium cost of 80GHz or 120GHz FMCW technology. It is widely used in water treatment plants, chemical storage facilities, and general manufacturing operations.`,
       },
     ],
   },
 
   'ultrasonic-level-sensors': {
     title: 'Ultrasonic Level Sensors',
-    description: 'Versatile non-contact level measurement using ultrasonic technology. Cost-effective solution for liquids and solids in open and closed tanks, channels, and reservoirs.',
+    description: 'Versatile non-contact level and distance measurement using ultrasonic technology. Cost-effective solutions for liquids and solids in open tanks, closed vessels, channels, and reservoirs. IP68 protection with multiple output options.',
     icon: '🔊',
     seo: {
-      title: 'Ultrasonic Level Sensor Manufacturer | Non-Contact Level Measurement',
-      description: 'Professional ultrasonic level sensor manufacturer. Non-contact level measurement for water, wastewater, chemicals, and bulk solids. CE certified. Global shipping.',
+      title: 'Ultrasonic Level Sensor Manufacturer | IP68 Non-Contact Level Measurement',
+      description: 'Professional ultrasonic level sensor manufacturer. Non-contact level measurement for water, wastewater, chemicals, and bulk solids. IP68, 0.1mm resolution, 4-20mA/RS485 output. CE certified. Global shipping.',
     },
     items: [
       {
@@ -172,35 +178,37 @@ This transmitter is ideal for customers who need the benefits of non-contact rad
         model: 'SMUS-20T',
         image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop',
         specs: [
-          { label: 'Measuring Range', value: '0.3 - 20 m (liquid) / 0.3 - 10 m (solid)' },
-          { label: 'Accuracy', value: '±0.2% of range' },
-          { label: 'Frequency', value: '20-50 kHz' },
+          { label: 'Measuring Range', value: '0.25 - 20 m (liquid) / 0.3 - 10 m (solid)' },
+          { label: 'Accuracy', value: '≤1% F.S.' },
+          { label: 'Resolution', value: '0.1 mm' },
+          { label: 'Blind Zone', value: '0.15 - 0.3 m' },
           { label: 'Beam Angle', value: '5-8°' },
-          { label: 'Output Signal', value: '4-20mA / RS485 Modbus' },
-          { label: 'Process Temperature', value: '-20 to +70 °C' },
-          { label: 'Process Pressure', value: 'Atmospheric' },
-          { label: 'Protection Grade', value: 'IP67' },
-          { label: 'Housing Material', value: 'PP / Aluminum' },
-          { label: 'Transducer Material', value: 'PVDF / PTFE' },
-          { label: 'Power Supply', value: '24 VDC / 220 VAC' },
+          { label: 'Output Signal', value: '4-20mA / 0-10V / 0-5V / RS485 / NPN / PNP' },
+          { label: 'Supply Voltage', value: '3.3-30 VDC' },
+          { label: 'Working Current', value: '≤ 45 mA' },
+          { label: 'Process Temperature', value: '-25 to +70 °C' },
+          { label: 'Storage Temperature', value: '-40 to +85 °C' },
+          { label: 'Protection Grade', value: 'IP68' },
+          { label: 'Housing Material', value: 'PVC / PVDF / PTFE / ABS' },
+          { label: 'Temperature Compensation', value: 'Yes (built-in)' },
           { label: 'Certification', value: 'CE, RoHS' },
         ],
         features: [
-          'Non-contact measurement with no moving parts',
-          'Cost-effective alternative to radar for clean applications',
-          'Easy installation and simple configuration',
-          'Built-in temperature compensation for accuracy',
-          'Digital display with programming buttons',
-          'Suitable for corrosive liquids with PVDF/PTFE transducer',
-          'Fail-safe output options (3.9mA / 20.5mA / hold)',
-          'False echo suppression for complex tank geometries',
+          'IP68 fully waterproof design for permanent immersion applications',
+          'Ultra-wide supply voltage range 3.3-30 VDC for flexible integration',
+          '0.1mm high resolution with ≤1% FS accuracy',
+          'Multiple output options: 4-20mA, 0-10V, 0-5V, RS485, NPN, PNP',
+          'Built-in temperature compensation for consistent accuracy',
+          'PVDF/PTFE transducer options for aggressive chemical media',
+          'Low power consumption ≤ 45 mA — suitable for battery-powered applications',
+          '5-core cable (analog) or 6-core cable (switch) output configurations',
         ],
-        applications: ['Water and wastewater treatment', 'Water storage tanks', 'Chemical storage', 'Open channels and weirs', 'Fuel and diesel tanks'],
-        description: `The SMUS-20T Ultrasonic Level Transmitter is our core ultrasonic level measurement product, offering reliable non-contact level measurement at an attractive price point. Using ultrasonic sound waves that reflect off the material surface, it calculates level based on the time-of-flight principle.
+        applications: ['Water and wastewater treatment', 'Chemical storage tanks', 'Fire water systems', 'City water supply', 'Food industry', 'Open channels and weirs'],
+        description: `The SMUS-20T Ultrasonic Level Transmitter is our core ultrasonic level measurement product, offering reliable non-contact level measurement with exceptional versatility. Using ultrasonic sound waves that reflect off the material surface, it calculates level based on the time-of-flight principle with 0.1mm resolution and ≤1% FS accuracy.
 
-This technology is ideal for clean liquids and bulk solids in applications where process conditions are moderate. The built-in temperature sensor automatically compensates for sound velocity changes due to ambient temperature variations, ensuring consistent accuracy across the operating temperature range.
+The ultra-wide supply voltage range of 3.3-30 VDC and low working current of ≤45 mA make the SMUS-20T suitable for a wide range of applications including battery-powered and solar-powered remote monitoring systems. The IP68 protection rating allows permanent immersion, while the PVC/PVDF/PTFE housing options provide chemical compatibility for aggressive media.
 
-The SMUS-20T is available in multiple range configurations from 5 to 20 meters, with transducer options in PVDF for general chemical compatibility and PTFE for aggressive media. The 2-wire 4-20mA output with HART communication makes it compatible with virtually all industrial control systems.`,
+The built-in temperature compensation sensor automatically adjusts for sound velocity changes due to ambient temperature variations, ensuring consistent accuracy across the entire operating temperature range of -25 to +70°C. Multiple output options — 4-20mA, 0-10V, 0-5V, RS485, NPN, and PNP — provide maximum integration flexibility with any control system.`,
       },
       {
         slug: 'ultrasonic-level-sensor-water-tank',
@@ -209,76 +217,122 @@ The SMUS-20T is available in multiple range configurations from 5 to 20 meters, 
         image: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=600&h=400&fit=crop',
         specs: [
           { label: 'Measuring Range', value: '0.15 - 10 m' },
-          { label: 'Accuracy', value: '±0.25% of range' },
-          { label: 'Frequency', value: '40-50 kHz' },
-          { label: 'Output Signal', value: '4-20mA / RS485 / Relay' },
-          { label: 'Process Temperature', value: '-20 to +60 °C' },
-          { label: 'Protection Grade', value: 'IP65' },
-          { label: 'Housing Material', value: 'ABS / PP' },
-          { label: 'Power Supply', value: '24 VDC / 220 VAC' },
+          { label: 'Accuracy', value: '≤1% F.S.' },
+          { label: 'Resolution', value: '0.1 mm' },
+          { label: 'Blind Zone', value: 'Min. 150mm' },
+          { label: 'Supply Voltage', value: '3.3-30 VDC' },
+          { label: 'Working Current', value: '≤ 45 mA' },
+          { label: 'Output Signal', value: '4-20mA / 0-10V / 0-5V / RS485 / NPN / PNP' },
+          { label: 'Process Temperature', value: '-25 to +70 °C' },
+          { label: 'Protection Grade', value: 'IP68' },
+          { label: 'Housing Material', value: 'PVC / ABS' },
+          { label: 'Temperature Compensation', value: 'Yes (built-in)' },
           { label: 'Certification', value: 'CE, RoHS' },
         ],
         features: [
-          'Compact and cost-effective design for water applications',
-          'Integrated display for local reading',
-          'Simple 2-wire or 4-wire connection',
-          'Multiple output options including relay alarms',
-          'Corrosion-resistant PP housing',
-          'Quick and easy installation',
-          'Low power consumption',
-          'IP65 protection for outdoor installation',
+          'Compact and cost-effective design optimized for water applications',
+          'IP68 waterproof for direct immersion in water tanks',
+          '0.1mm resolution with automatic temperature compensation',
+          'Multiple output options for flexible system integration',
+          'Low power consumption suitable for remote monitoring',
+          'Corrosion-resistant PVC/ABS housing',
+          'Quick and easy installation with cable mount design',
+          'Customizable measuring range to fit specific tank dimensions',
         ],
-        applications: ['Water tanks and reservoirs', 'Rainwater collection', 'Irrigation systems', 'Cooling towers', 'Swimming pools'],
+        applications: ['Water tanks and reservoirs', 'Rainwater collection systems', 'Irrigation monitoring', 'Cooling tower basins', 'Swimming pools', 'Fire water tanks'],
         description: `The SMUS-10W is our specialized ultrasonic level sensor designed specifically for water tank and general water level monitoring applications. It combines essential level measurement features with an economical price point, making it ideal for water management projects where cost efficiency is a priority.
 
-With a 10-meter maximum range, compact ABS/PP housing, and IP65 protection, the SMUS-10W is perfectly suited for outdoor water tank installations. The integrated relay outputs allow direct control of pumps and alarms without an external controller, simplifying system design and reducing installation costs.`,
+With a 10-meter maximum range, IP68 waterproof housing, and 0.1mm resolution, the SMUS-10W is perfectly suited for outdoor water tank installations. The built-in temperature compensation ensures accurate readings across seasonal temperature variations. Multiple output options including 4-20mA, RS485, and switching outputs allow direct integration with pump controllers, alarms, and SCADA systems.
+
+The low power consumption (≤45 mA) makes it ideal for solar-powered remote monitoring stations, while the compact PVC/ABS housing provides long-term durability in humid and wet environments.`,
+      },
+      {
+        slug: 'ultrasonic-distance-sensor-long-range',
+        name: 'Long-Range Ultrasonic Distance Sensor',
+        model: 'SMUS-30L',
+        image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Measuring Range', value: '0.15 - 30 m+' },
+          { label: 'Accuracy', value: '≤1% F.S.' },
+          { label: 'Blind Zone', value: '0.15 - 1.2 m' },
+          { label: 'Supply Voltage', value: '3.3-30 VDC' },
+          { label: 'Working Current', value: '≤ 45 mA (normal) / < 0.3 mA (sleep mode)' },
+          { label: 'Output Signal', value: '4-20mA / 0-10V / 0-5V / RS485 / NPN / PNP' },
+          { label: 'Process Temperature', value: '-25 to +85 °C' },
+          { label: 'Protection Grade', value: 'IP65 / IP68 (optional)' },
+          { label: 'Housing Material', value: 'Stainless steel / PVC' },
+          { label: 'Temperature Compensation', value: 'Yes (-10 to +70 °C)' },
+          { label: 'Display', value: 'SFTN LCD with green backlight (optional)' },
+          { label: 'Certification', value: 'CE, RoHS' },
+        ],
+        features: [
+          'Extended measuring range up to 30+ meters for large tanks and silos',
+          'Ultra-low power sleep mode (<0.3 mA) for LPWAN and IoT applications',
+          'Three working modes: continuous, command-triggered, and ultra-low power',
+          'Optional SFTN LCD display with green backlight for local reading',
+          'Stainless steel housing option for industrial environments',
+          'Vibration resistance < ±0.05%/g at 500Hz in all directions',
+          'Measurement period configurable (default 200ms)',
+          'RS485 and 4-20mA remote transmission options',
+        ],
+        applications: ['Large storage silos', 'Deep wells and boreholes', 'Bulk solid inventory', 'River and reservoir level monitoring', 'Industrial process tanks', 'LPWAN/IoT remote monitoring'],
+        description: `The SMUS-30L Long-Range Ultrasonic Distance Sensor extends our ultrasonic product line to cover large-scale measurement applications up to 30+ meters. Designed for deep silos, large storage tanks, and remote monitoring systems, it combines long-range capability with ultra-low power consumption.
+
+The sensor features three working modes: continuous measurement mode for standard applications, command-triggered measurement mode for on-demand readings, and ultra-low power mode with sleep consumption less than 0.3 mA — making it ideal for battery-powered LPWAN networks and IoT deployments where power efficiency is critical.
+
+The optional SFTN LCD display with green backlight provides local reading capability, while the 5-digit display shows measurement data in user-selectable units. The stainless steel housing option ensures durability in harsh industrial environments with vibration resistance rated at < ±0.05%/g at 500Hz.`,
       },
     ],
   },
 
   'pressure-sensors': {
     title: 'Pressure Sensors & Transmitters',
-    description: 'High-precision pressure measurement instruments for industrial process control. Including pressure transmitters, differential pressure sensors, and submersible level transmitters.',
+    description: 'High-precision pressure measurement instruments for industrial process control. Including pressure transmitters, differential pressure sensors, submersible level transmitters, and digital pressure gauges. MEMS technology with 0.05% FS accuracy.',
     icon: '⚡',
     seo: {
-      title: 'Pressure Sensor & Transmitter Manufacturer | Industrial Pressure Measurement',
-      description: 'Professional pressure sensor and transmitter manufacturer. 4-20mA pressure transducers, differential pressure sensors, submersible level transmitters. CE certified, OEM/ODM.',
+      title: 'Pressure Sensor Manufacturer | MEMS Pressure Transmitter 4-20mA',
+      description: 'Professional pressure sensor and transmitter manufacturer. MEMS pressure sensors, 4-20mA pressure transducers, differential pressure transmitters, submersible level sensors, digital pressure gauges. CE certified, OEM/ODM.',
     },
     items: [
       {
         slug: 'pressure-transmitter-4-20ma',
         name: 'Industrial Pressure Transmitter 4-20mA',
-        model: 'SMPT-2088',
+        model: 'SMPT-140',
         image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop',
         specs: [
-          { label: 'Pressure Range', value: '-0.1 to 0...100 MPa' },
-          { label: 'Accuracy', value: '±0.1% FS / ±0.25% FS' },
-          { label: 'Output Signal', value: '4-20mA / 0-10V / RS485' },
-          { label: 'Process Connection', value: 'G1/4, G1/2, M20×1.5, 1/2 NPT, etc.' },
-          { label: 'Process Temperature', value: '-40 to +125 °C' },
-          { label: 'Sensor Type', value: 'Piezoresistive / Ceramic Capacitive' },
-          { label: 'Diaphragm Material', value: '316L SS / Ceramic Al₂O₃ 96%' },
-          { label: 'Housing Material', value: '316L SS / Aluminum' },
-          { label: 'Protection Grade', value: 'IP65 / IP67' },
-          { label: 'Power Supply', value: '24 VDC (12-36 VDC)' },
-          { label: 'Certification', value: 'CE, RoHS, Ex d IIC T6 (optional)' },
+          { label: 'Pressure Range', value: '-100 kPa to 0...100 MPa' },
+          { label: 'Accuracy', value: '±0.2% FS / ±0.25% FS / ±0.5% FS' },
+          { label: 'Output Signal', value: '4-20mA / 0-5V / 1-5V / 0-10V' },
+          { label: 'Sensor Type', value: 'MEMS Piezoresistive' },
+          { label: 'Diaphragm Material', value: '316L SS / Silicon' },
+          { label: 'Process Connection', value: 'M3/M4/M5/M6/M10/G1/2/NPT' },
+          { label: 'Process Temperature', value: '-40 to +125 °C (up to +1200°C with cooling)' },
+          { label: 'Power Supply', value: '5V / 10V / 24V DC (9-36V)' },
+          { label: 'Stability', value: '±0.2% FS / year' },
+          { label: 'Overload Pressure', value: '200% FS' },
+          { label: 'Rupture Pressure', value: '500% FS' },
+          { label: 'Response Frequency', value: '50-500 kHz' },
+          { label: 'Protection Grade', value: 'IP65' },
+          { label: 'Certification', value: 'CE, RoHS, Ex (optional)' },
         ],
         features: [
-          'High accuracy ±0.1% or ±0.25% FS options available',
-          'Wide pressure range coverage from vacuum to 100 MPa',
-          '316L stainless steel or ceramic sensing element',
-          'Compact and robust industrial design',
-          'HART communication protocol support (optional)',
-          'Temperature compensation for stable readings',
-          'Explosion-proof version available for hazardous areas',
-          'Custom pressure ranges and connections on request',
+          'MEMS sensor chip technology with micro-structure design',
+          'Wide measurement range from -100 kPa to 100 MPa',
+          'Multiple accuracy options: ±0.2%, ±0.25%, ±0.5% FS',
+          'Excellent long-term stability: ±0.2% FS/year',
+          'Strong output signal with anti-jamming capability',
+          'High temperature version up to +1200°C with water-cooling structure',
+          'Multiple pressure types: gauge, sealed gauge, absolute gauge',
+          'Overload capacity 200% FS, rupture pressure 500% FS',
         ],
-        applications: ['Hydraulic and pneumatic systems', 'Pump and compressor monitoring', 'Process control', 'Oil and gas pipelines', 'HVAC systems'],
-        description: `The SMPT-2088 Industrial Pressure Transmitter is our versatile 4-20mA pressure measurement instrument, based on proven piezoresistive or ceramic capacitive sensing technology. It converts pressure into a standard 4-20mA analog signal for seamless integration with PLCs, DCS systems, and industrial controllers.
+        applications: ['Hydraulic and pneumatic systems', 'Aerospace and wind tunnel experiments', 'Pump and compressor monitoring', 'Petroleum exploration and exploitation', 'Biomedical applications', 'Fluid mechanics research'],
+        description: `The SMPT-140 Industrial Pressure Transmitter utilizes advanced MEMS (Micro-Electro-Mechanical Systems) sensor chip technology, integrating piezoresistive sensing elements with custom micro-packaging. The compact size and dimensions can be customized to meet specific customer requirements.
 
-Available in gauge, absolute, and sealed gauge configurations, the SMPT-2088 covers pressure ranges from -0.1 MPa vacuum to 100 MPa high pressure. The 316L stainless steel wetted parts ensure compatibility with a wide range of fluids, while the compact design allows installation in space-constrained applications.
+Key advantages of the MEMS technology include micro-shape design, strong output signal, excellent high-temperature performance, reliable dynamic and static characteristics, and outstanding long-term stability of ±0.2% FS/year. The sensor achieves a response frequency of 50-500 kHz, making it suitable for both static and dynamic pressure measurement applications.
 
-Accuracy options of ±0.1% or ±0.25% FS meet different application requirements and budget considerations. The optional HART communication enables remote configuration, diagnostics, and multi-variable data access without additional wiring.`,
+With a measurement range spanning from -100 kPa vacuum to 100 MPa high pressure, and multiple accuracy options from ±0.2% to ±0.5% FS, the SMPT-140 covers virtually all industrial pressure measurement needs. The high-temperature version with water-cooling structure can withstand temperatures up to +1200°C for specialized applications in metallurgy and aerospace.
+
+The transmitter is available with various process connections (M3 to M10, G1/2, NPT), pressure types (gauge, sealed gauge, absolute), and electrical connections (fixed cable, aviation plug), providing maximum flexibility for OEM customization.`,
       },
       {
         slug: 'differential-pressure-transmitter',
@@ -317,48 +371,87 @@ The large backlit LCD display and local pushbuttons allow field configuration wi
       {
         slug: 'submersible-level-transmitter',
         name: 'Submersible Level Transmitter',
-        model: 'SMSL-26',
+        model: 'SMSL-201C',
         image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop',
         specs: [
-          { label: 'Level Range', value: '0-1m to 0-200m H₂O' },
-          { label: 'Accuracy', value: '±0.25% FS' },
+          { label: 'Level Range', value: '0-1m to 0-500m H₂O' },
+          { label: 'Accuracy', value: '0.05% / 0.1% / 0.2% / 0.4% / 0.5% FS' },
+          { label: 'Pressure Range', value: '-100 kPa to 0...600 kPa to 260 MPa' },
           { label: 'Output Signal', value: '4-20mA / RS485' },
           { label: 'Sensor Type', value: 'Piezoresistive silicon' },
-          { label: 'Cable Material', value: 'PU / FEP / PE' },
+          { label: 'Cable Material', value: 'PU / FEP / PE (ventilated)' },
           { label: 'Diaphragm Material', value: '316L SS' },
           { label: 'Housing Material', value: '316L SS' },
-          { label: 'Protection Grade', value: 'IP68' },
-          { label: 'Process Temperature', value: '0 to +50 °C' },
-          { label: 'Power Supply', value: '24 VDC' },
-          { label: 'Certification', value: 'CE, RoHS' },
+          { label: 'Protection Grade', value: 'IP68 (permanent immersion)' },
+          { label: 'Display', value: 'SFTN LCD with white backlight (optional)' },
+          { label: 'Power Supply', value: '24 VDC / 4.2V rechargeable battery (display version)' },
+          { label: 'Process Temperature', value: '-20 to +50 °C' },
+          { label: 'Certification', value: 'CE, Ex explosion-proof (optional)' },
         ],
         features: [
-          'IP68 fully submersible design for continuous immersion',
-          'Measuring ranges from 1m to 200m water column',
+          'Multiple precision grades from 0.05% to 0.5% FS',
+          'IP68 fully submersible for permanent immersion',
+          'Measuring ranges from 1m to 500m water column',
+          'Optional SFTN LCD display with white backlight and 5-digit reading',
+          'Touch key with lock function to prevent accidental operation',
           'Built-in lightning and surge protection',
           'Vented cable for atmospheric pressure compensation',
-          '316L stainless steel for corrosion resistance',
-          'Compact diameter for narrow borehole installation',
-          'Anti-clogging design with protective cap',
-          'Long cable lengths up to 300m available',
+          '316L stainless steel for corrosion resistance in seawater',
         ],
-        applications: ['Deep wells and boreholes', 'Groundwater monitoring', 'Rivers, lakes and reservoirs', 'Wastewater lift stations', 'Seawater level monitoring'],
-        description: `The SMSL-26 Submersible Level Transmitter is designed for continuous liquid level measurement in deep wells, boreholes, tanks, and open water bodies. The transmitter is lowered into the liquid, and hydrostatic pressure is measured to determine the liquid level above the sensor.
+        applications: ['Deep wells and boreholes', 'Groundwater monitoring', 'Rivers, lakes and reservoirs', 'Wastewater lift stations', 'Seawater level monitoring', 'Mine water level'],
+        description: `The SMSL-201C Submersible Level Transmitter is designed for continuous liquid level measurement in deep wells, boreholes, tanks, and open water bodies. Available in five precision grades from 0.05% to 0.5% FS, it meets the accuracy requirements of both general monitoring and high-precision scientific applications.
 
-With IP68 permanent immersion rating, 316L stainless steel construction, and a vented cable for barometric compensation, the SMSL-26 delivers reliable measurements even in harsh field conditions. Available in standard ranges from 1 meter to 200 meters of water column, it covers applications from shallow groundwater monitoring to deep well level measurement.
+With IP68 permanent immersion rating, 316L stainless steel construction, and a vented cable for barometric compensation, the SMSL-201C delivers reliable measurements even in harsh field conditions. The optional SFTN LCD display with white backlight and 5-digit reading provides convenient local indication, while the touch key with lock function prevents accidental operation during use.
 
-The submersible design makes it ideal for applications where top-mounted sensors are impractical — narrow boreholes, tanks without top access, and open water bodies where no mounting structure exists above the water surface.`,
+Available in standard ranges from 1 meter to 500 meters of water column, it covers applications from shallow groundwater monitoring to deep well level measurement. The submersible design makes it ideal for applications where top-mounted sensors are impractical — narrow boreholes, tanks without top access, and open water bodies.`,
+      },
+      {
+        slug: 'digital-pressure-gauge',
+        name: 'Intelligent Digital Pressure Gauge',
+        model: 'SMPG-106',
+        image: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Pressure Range', value: '-0.1 to 0...0.01 to 100 MPa' },
+          { label: 'Accuracy', value: '±0.2% FS / ±0.5% FS' },
+          { label: 'Overload Capacity', value: '200% FS' },
+          { label: 'Pressure Type', value: 'Gauge' },
+          { label: 'Long-term Stability', value: '≤ 0.1% / year' },
+          { label: 'Output Signal', value: '4-20mA' },
+          { label: 'Display', value: '0.56" LED / LCD (5-digit, -19999 to 99999)' },
+          { label: 'Power Supply', value: '12-30 VDC / 220 VAC' },
+          { label: 'Operating Temperature', value: '-20 to +70 °C' },
+          { label: 'Relative Humidity', value: '≤ 80% RH' },
+          { label: 'Mounting Thread', value: 'M20×1.5' },
+          { label: 'Interface Material', value: 'Stainless Steel' },
+          { label: 'Certification', value: 'CE, Ex explosion-proof (optional)' },
+        ],
+        features: [
+          'Intelligent digital display with LED/LCD options',
+          'Multiple range options from vacuum to 100 MPa',
+          'High accuracy ±0.2% FS with excellent long-term stability ≤0.1%/year',
+          'Reverse polarity protection and current limit protection',
+          'Lightning strike and shock resistance',
+          'Compact size, beautiful appearance, high cost performance',
+          'Touch key with lock function to prevent accidental operation',
+          'Integrated junction box design for easy installation and maintenance',
+        ],
+        applications: ['Petroleum and petrochemical', 'Water conservancy', 'Chemical industry', 'Metallurgy', 'Electric power', 'Scientific research and environmental protection'],
+        description: `The SMPG-106 Intelligent Digital Pressure Gauge adopts imported pressure-sensitive components with computer laser trimming for temperature compensation, housed in an integrated junction box design. With a dedicated terminal and digital display, it offers easy installation, calibration, and maintenance.
+
+This series is suitable for various industries including petroleum, water conservancy, chemical, metallurgy, electric power, light industry, scientific research, and environmental protection. It enables fluid pressure measurement in all weather conditions and with various corrosive fluids across diverse applications.
+
+The gauge features multiple range options, digital LCD/LED pressure display, convenient range debugging, reverse polarity protection, current limit protection, lightning strike and shock resistance. The compact size and high cost-performance ratio make it an ideal choice for industrial pressure monitoring. The touch key with lock function effectively improves key service life and prevents accidental operation during use.`,
       },
     ],
   },
 
   'distance-sensors': {
     title: 'Distance Sensors',
-    description: 'High-precision non-contact distance measurement sensors using laser and ultrasonic technology. Ideal for industrial automation, positioning, and object detection applications.',
+    description: 'High-precision non-contact distance measurement sensors using laser and ultrasonic technology. Ideal for industrial automation, positioning, object detection, and level measurement. IP68 protection with millimeter-level accuracy.',
     icon: '📏',
     seo: {
       title: 'Distance Sensor Manufacturer | Laser & Ultrasonic Distance Measurement',
-      description: 'Professional distance sensor manufacturer. Laser distance sensors, ultrasonic distance sensors, long-range industrial distance measurement. CE certified, OEM/ODM. Global shipping.',
+      description: 'Professional distance sensor manufacturer. Laser distance sensors with ±1mm accuracy, ultrasonic distance sensors with 0.1mm resolution. IP68 protection, 4-20mA/RS485 output. CE certified, OEM/ODM. Global shipping.',
     },
     items: [
       {
@@ -394,52 +487,56 @@ The submersible design makes it ideal for applications where top-mounted sensors
 
 With ±1mm accuracy and sub-10ms response time, it is ideal for dynamic positioning applications in factory automation, crane positioning, robotic systems, and warehouse logistics. The eye-safe Class 2 red laser (635nm) eliminates the need for special safety equipment or operator training.
 
-Multiple output interfaces — 4-20mA analog, RS232, RS485 Modbus, and SSI — provide flexible integration options for PLCs, industrial computers, and custom controllers. The compact aluminum housing with IP65 protection ensures reliable operation in industrial environments.`,
+Multiple output interfaces — 4-20mA analog, RS232, RS485 Modbus, and SSI — provide flexible integration options for PLCs, industrial computers, and custom controllers.`,
       },
       {
         slug: 'ultrasonic-distance-sensor',
         name: 'Ultrasonic Distance Sensor',
-        model: 'SMUD-80',
+        model: 'SMUD-550',
         image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&h=400&fit=crop',
         specs: [
           { label: 'Technology', value: 'Ultrasonic Time-of-Flight' },
-          { label: 'Measuring Range', value: '0.3 - 8 m' },
-          { label: 'Accuracy', value: '±0.5% of range' },
-          { label: 'Frequency', value: '40-200 kHz' },
-          { label: 'Output Signal', value: '4-20mA / 0-10V / RS485 / Switching' },
-          { label: 'Operating Temperature', value: '-20 to +60 °C' },
-          { label: 'Protection Grade', value: 'IP67' },
-          { label: 'Housing Material', value: 'PBT / ABS' },
-          { label: 'Power Supply', value: '24 VDC' },
+          { label: 'Measuring Range', value: '0.15 - 5 m (customizable to 30m+)' },
+          { label: 'Accuracy', value: '≤1% F.S.' },
+          { label: 'Resolution', value: '0.1 mm' },
+          { label: 'Blind Zone', value: '150-250 mm' },
+          { label: 'Supply Voltage', value: '3.3-30 VDC' },
+          { label: 'Working Current', value: '≤ 45 mA' },
+          { label: 'Output Signal', value: '4-20mA / 0-10V / 0-5V / 0-3V / RS485 / NPN / PNP / TTL' },
+          { label: 'Operating Temperature', value: '-25 to +70 °C' },
+          { label: 'Storage Temperature', value: '-40 to +85 °C' },
+          { label: 'Protection Grade', value: 'IP68' },
+          { label: 'Housing Material', value: 'PVC / PVDF / PTFE / ABS' },
+          { label: 'Temperature Compensation', value: 'Yes (built-in)' },
           { label: 'Certification', value: 'CE, RoHS' },
         ],
         features: [
-          'Robust ultrasonic technology for industrial environments',
+          'IP68 waterproof for harsh and wet environments',
+          '0.1mm high resolution with ≤1% FS accuracy',
+          'Ultra-wide supply voltage 3.3-30 VDC',
+          '8 output signal options for maximum integration flexibility',
+          'Built-in temperature compensation for accurate readings',
           'Unaffected by target color, transparency, or surface finish',
           'Works in dusty and humid environments',
-          'Synchronization input for multiple sensor installations',
-          'Teach-in buttons for easy setup',
-          'Analog and digital outputs in one device',
-          'Compact and lightweight design',
-          'Excellent for transparent object detection',
+          'Customizable measuring range and cable length',
         ],
-        applications: ['Object detection and positioning', 'Fill level in small tanks', 'Transparent object detection', 'Stack height monitoring', 'Conveyor belt presence detection'],
-        description: `The SMUD-80 Ultrasonic Distance Sensor provides reliable distance measurement and object detection for industrial automation applications. Using ultrasonic sound waves, it measures distance independent of target color, transparency, or surface reflectivity — properties that challenge optical sensors.
+        applications: ['Object detection and positioning', 'Fill level in small tanks', 'Transparent object detection', 'Stack height monitoring', 'Conveyor belt presence detection', 'Robot obstacle avoidance'],
+        description: `The SMUD-550 Ultrasonic Distance Sensor provides reliable distance measurement and object detection for industrial automation applications. Using ultrasonic sound waves, it measures distance independent of target color, transparency, or surface reflectivity — properties that challenge optical sensors.
 
-With its IP67-rated PBT/ABS housing and operating temperature range of -20 to +60°C, the SMUD-80 performs reliably in dusty, humid, and dirty industrial environments where optical sensors may fail. It is particularly effective for detecting transparent objects like glass bottles, clear plastic containers, and transparent films.
+With IP68-rated housing and operating temperature range of -25 to +70°C, the SMUD-550 performs reliably in dusty, humid, and dirty industrial environments where optical sensors may fail. It is particularly effective for detecting transparent objects like glass bottles, clear plastic containers, and transparent films.
 
-The built-in teach-in function allows fast configuration without a PC or additional equipment, while the synchronization input prevents cross-talk when multiple sensors are installed in close proximity.`,
+The sensor offers 8 output signal options including 4-20mA, 0-10V, 0-5V, 0-3V, RS485, NPN, PNP, and TTL, making it compatible with virtually any control system. The 0.1mm resolution and built-in temperature compensation ensure precise measurements across varying environmental conditions.`,
       },
     ],
   },
 
   'environmental-sensors': {
     title: 'Environmental Sensors',
-    description: 'Comprehensive environmental monitoring sensors for temperature, humidity, gas detection, and water quality. Essential instruments for environmental compliance and process optimization.',
+    description: 'Comprehensive environmental monitoring sensors for water quality, temperature, humidity, gas detection, and air quality. Essential instruments for environmental compliance, process optimization, and industrial safety.',
     icon: '🌡️',
     seo: {
-      title: 'Environmental Sensor Manufacturer | Temperature, Humidity, Gas & Water Quality',
-      description: 'Professional environmental sensor manufacturer. Temperature sensors, humidity sensors, CO2 & gas detectors, water quality sensors. CE certified. OEM/ODM available.',
+      title: 'Environmental Sensor Manufacturer | Water Quality, Temperature, Gas Sensors',
+      description: 'Professional environmental sensor manufacturer. Water quality sensors (pH, COD, dissolved oxygen, turbidity), temperature/humidity transmitters, CO₂ gas sensors. CE certified. OEM/ODM available. Global shipping.',
     },
     items: [
       {
@@ -473,9 +570,7 @@ The built-in teach-in function allows fast configuration without a PC or additio
         applications: ['HVAC and building automation', 'Greenhouses and agriculture', 'Cold chain monitoring', 'Cleanrooms and laboratories', 'Server rooms and data centers'],
         description: `The SMTH-485 Temperature and Humidity Transmitter combines precision temperature and relative humidity measurement in a single compact instrument. Using a Swiss-made Sensirion digital sensor element, it delivers industry-leading accuracy and long-term stability.
 
-Available in wall-mount, duct-mount, and remote probe configurations, the SMTH-485 adapts to various installation requirements. The RS485 Modbus RTU interface allows easy integration into building management systems, PLC networks, and IoT platforms. Optional 4-20mA or 0-10V analog outputs are available for traditional control systems.
-
-The sensor element features a factory-calibrated digital output with excellent long-term stability and minimal drift, ensuring reliable measurements over years of operation without recalibration. The IP65-rated housing protects against dust and water ingress, making it suitable for outdoor agricultural and industrial applications.`,
+Available in wall-mount, duct-mount, and remote probe configurations, the SMTH-485 adapts to various installation requirements. The RS485 Modbus RTU interface allows easy integration into building management systems, PLC networks, and IoT platforms.`,
       },
       {
         slug: 'co2-gas-sensor',
@@ -506,9 +601,42 @@ The sensor element features a factory-calibrated digital output with excellent l
         applications: ['Indoor air quality monitoring', 'HVAC demand-controlled ventilation', 'Greenhouses and agriculture', 'Office and classroom IAQ', 'Parking garage ventilation'],
         description: `The SMGS-CO2 Carbon Dioxide Gas Sensor uses proven NDIR (Non-Dispersive Infrared) technology to provide accurate CO₂ concentration measurements for indoor air quality, building ventilation control, and environmental monitoring applications.
 
-The self-calibrating ABC (Automatic Baseline Correction) algorithm automatically compensates for sensor drift, maintaining accuracy over years of continuous operation with minimal maintenance. The sensor's expected lifetime exceeds 10 years under normal operating conditions.
+The self-calibrating ABC (Automatic Baseline Correction) algorithm automatically compensates for sensor drift, maintaining accuracy over years of continuous operation with minimal maintenance. The sensor's expected lifetime exceeds 10 years under normal operating conditions.`,
+      },
+      {
+        slug: 'water-quality-ph-sensor',
+        name: 'Online pH/ORP Sensor',
+        model: 'SMWQ-500',
+        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Measurement Parameters', value: 'pH (0-14) / ORP (-2000 to +2000 mV)' },
+          { label: 'Accuracy', value: '±2% (calibrated)' },
+          { label: 'Sensor Material', value: 'PVC / Glass' },
+          { label: 'Output Signal', value: '4-20mA / RS485 Modbus RTU' },
+          { label: 'Power Supply', value: '12-24 VDC' },
+          { label: 'Operating Temperature', value: '0 to +60 °C' },
+          { label: 'Protection Grade', value: 'IP68' },
+          { label: 'Temperature Compensation', value: 'Automatic (NTC)' },
+          { label: 'Calibration', value: '2-point / 3-point calibration' },
+          { label: 'Cleaning', value: 'Automatic cleaning brush (optional)' },
+          { label: 'Certification', value: 'CE, RoHS' },
+        ],
+        features: [
+          'Combined pH and ORP measurement in one sensor',
+          'RS485 Modbus RTU output for direct PLC/DCS integration',
+          '4-20mA analog output for traditional systems',
+          'IP68 waterproof for direct immersion in water',
+          'Automatic temperature compensation with NTC sensor',
+          'Optional automatic cleaning brush to eliminate bubbles',
+          '2-point and 3-point calibration support',
+          'PVC/glass construction for chemical resistance',
+        ],
+        applications: ['Water treatment plants', 'Industrial wastewater monitoring', 'Aquaculture and fisheries', 'Swimming pool water quality', 'Chemical process control', 'Environmental monitoring stations'],
+        description: `The SMWQ-500 Online pH/ORP Sensor is a digital water quality sensor designed for continuous monitoring of pH and Oxidation-Reduction Potential (ORP) in water and wastewater applications. With a measurement range of 0-14 pH and ±2000 mV ORP, it covers the full spectrum of water quality monitoring needs.
 
-Three independent relay outputs enable direct control of ventilation fans, damper actuators, and alarm indicators without an external controller. The large backlit LCD simultaneously displays CO₂ concentration, temperature, and humidity (optional), providing a complete indoor environment overview at a glance.`,
+The sensor features RS485 Modbus RTU digital output and 4-20mA analog output, enabling direct integration with PLCs, DCS systems, and third-party monitoring platforms. The IP68 waterproof rating allows direct immersion in water, while the automatic temperature compensation ensures accurate readings across varying conditions.
+
+The optional automatic cleaning brush eliminates bubbles and fouling on the sensor surface, reducing maintenance frequency and ensuring long-term measurement stability. The 2-point and 3-point calibration options provide flexibility for different accuracy requirements.`,
       },
     ],
   },
