@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, X, ChevronDown, Phone, Mail, MessageCircle } from 'lucide-react'
 
@@ -72,6 +72,27 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [productsOpen, setProductsOpen] = useState(false)
   const location = useLocation()
+  const closeTimerRef = useRef(null)
+
+  const handleProductsEnter = () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current)
+      closeTimerRef.current = null
+    }
+    setProductsOpen(true)
+  }
+
+  const handleProductsLeave = () => {
+    closeTimerRef.current = setTimeout(() => {
+      setProductsOpen(false)
+    }, 3000)
+  }
+
+  useEffect(() => {
+    return () => {
+      if (closeTimerRef.current) clearTimeout(closeTimerRef.current)
+    }
+  }, [])
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
@@ -114,8 +135,8 @@ export default function Header() {
             {navLinks.map((link) =>
               link.megaMenu ? (
                 <div key={link.label} className="relative group"
-                  onMouseEnter={() => setProductsOpen(true)}
-                  onMouseLeave={() => setProductsOpen(false)}>
+                  onMouseEnter={handleProductsEnter}
+                  onMouseLeave={handleProductsLeave}>
                   <NavLink
                     to={link.to}
                     className={({ isActive }) =>
