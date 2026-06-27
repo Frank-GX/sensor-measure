@@ -1,6 +1,7 @@
 import flowMeterCategories from './categories-flow-meters.js';
 import levelPressureCategories from './categories-level-pressure.js';
 import sensorCategories from './categories-sensors.js';
+import vibrationIsolatorCategories from './categories-vibration-isolators.js';
 
 
 const products = {
@@ -568,6 +569,88 @@ The gauge features multiple range options, digital LCD/LED pressure display, con
           applicationAreas: ['Oil & Gas', 'Chemical', 'Power Generation', 'Water Treatment'],
         },
       },
+      {
+        slug: 'digital-peak-pressure-gauge',
+        name: 'Digital Peak Pressure Gauge',
+        model: 'SMPG-108P',
+        image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Pressure Range', value: '-0.1 to 0...0.01 to 100 MPa' },
+          { label: 'Accuracy', value: '±0.5% FS' },
+          { label: 'Overload Capacity', value: '200% FS' },
+          { label: 'Display', value: '4-digit LED (red)' },
+          { label: 'Sampling Rate', value: '10 times/second' },
+          { label: 'Peak Memory', value: 'Captures and holds maximum pressure value' },
+          { label: 'Output Signal', value: '4-20mA / Relay (optional)' },
+          { label: 'Power Supply', value: 'DC24V / AC220V' },
+          { label: 'Operating Temperature', value: '-20 to +70 °C' },
+          { label: 'Relative Humidity', value: '≤ 90% RH' },
+          { label: 'Mounting Thread', value: 'M20×1.5 / G1/4 / NPT' },
+          { label: 'Interface Material', value: 'Stainless Steel' },
+          { label: 'Protection', value: 'IP65' },
+          { label: 'Certification', value: 'CE, RoHS' },
+        ],
+        features: [
+          'Peak hold function — captures and displays maximum pressure value',
+          'High-speed 10 Hz sampling for capturing transient pressure spikes',
+          '200% overload capacity without damage',
+          '4-digit bright LED display for easy reading in all lighting conditions',
+          'User-resettable peak value with single button operation',
+          '4-20mA output for continuous data logging and SCADA integration',
+          'Optional relay output for high-pressure alarm or control',
+          'Industrial stainless steel interface for long-term durability',
+        ],
+        applications: 'Hydraulic system testing and troubleshooting, pneumatic circuit peak pressure monitoring, pressure relief valve set point verification, pump dead-head testing, burst pressure testing, injection molding pressure monitoring, compressor surge detection.',
+        description: 'The SMPG-108P Digital Peak Pressure Gauge is specifically designed to capture and display transient pressure spikes that conventional gauges miss. With 10 Hz sampling rate and built-in peak hold memory, it records the maximum pressure value reached during a test or process cycle — essential for troubleshooting hydraulic systems, verifying relief valve set points, and detecting pressure surges. The 4-digit red LED display provides excellent visibility in all lighting conditions, while the user-resettable peak value allows quick consecutive measurements. The 200% overload capacity ensures the gauge survives pressure spikes well beyond the normal operating range without damage. Optional 4-20mA output enables continuous recording, and optional relay output provides high-pressure alarm or control functionality.',
+        filterTags: {
+          outputSignal: ['4-20mA', 'Relay'],
+          protectionGrade: 'IP65',
+          measuringRange: 'Up to 100 MPa',
+          powerSupply: 'DC24V / AC220V',
+          applicationAreas: ['Hydraulic', 'Pneumatic', 'Industrial', 'Testing'],
+        },
+      },
+      {
+        slug: 'high-temperature-mems-pressure-sensor',
+        name: 'High-Temperature MEMS Pressure Sensor',
+        model: 'SMPT-316HT',
+        image: 'https://images.unsplash.com/photo-1581092921461-7d7c4a1e14e3?w=600&h=400&fit=crop',
+        specs: [
+          { label: 'Pressure Range', value: '-100 kPa to 0...100 MPa' },
+          { label: 'Accuracy', value: '±0.25% FS' },
+          { label: 'Sensor Type', value: 'MEMS Piezoresistive (316L SS diaphragm)' },
+          { label: 'Body Material', value: '316L Stainless Steel' },
+          { label: 'Process Connection', value: 'M20×1.5 / G1/4 / 1/4 NPT / Flange' },
+          { label: 'Output Signal', value: '4-20mA / 0-5V / 0-10V / RS485 Modbus' },
+          { label: 'Process Temperature', value: '-40 to +200 °C (standard), +350 °C (with cooling)' },
+          { label: 'Temperature Compensation', value: '-20 to +85 °C (built-in)' },
+          { label: 'Long-term Stability', value: '≤ 0.1% FS / year' },
+          { label: 'Overload Capacity', value: '200% FS' },
+          { label: 'Power Supply', value: '12-36 VDC' },
+          { label: 'Protection', value: 'IP67' },
+          { label: 'Response Time', value: '< 1 ms' },
+          { label: 'Certification', value: 'CE, RoHS' },
+        ],
+        features: [
+          '316L stainless steel construction for high-temperature and corrosive media',
+          'MEMS piezoresistive sensor with 0.25% FS accuracy',
+          'Wide temperature range — standard to +200°C, up to +350°C with cooling extension',
+          'Built-in temperature compensation for stable readings across thermal range',
+          'Excellent long-term stability ≤ 0.1% FS per year',
+          'Fast response time under 1 millisecond for dynamic pressure measurement',
+          'Multiple output options: 4-20mA, 0-5V, 0-10V, RS485',
+          'IP67 protection for harsh industrial and outdoor environments',
+        ],
+        applications: 'Steam pressure monitoring, heat exchanger pressure measurement, autoclave and sterilizer pressure control, thermal oil system monitoring, boiler feed water pressure, chemical reactor pressure, food processing (CIP/SIP systems), high-temperature hydraulic systems.',
+        description: 'The SMPT-316HT High-Temperature MEMS Pressure Sensor is engineered for pressure measurement in high-temperature industrial processes where standard sensors would fail. The 316L stainless steel body and diaphragm withstand media temperatures up to +200°C in standard configuration, with optional cooling extension enabling operation up to +350°C. The MEMS piezoresistive sensing element delivers ±0.25% FS accuracy with built-in temperature compensation across -20 to +85°C, ensuring stable readings despite ambient temperature swings. The sensor is ideal for steam systems, autoclaves, chemical reactors, and food processing equipment where both high temperature and corrosion resistance are required. With multiple output options (4-20mA, voltage, RS485) and IP67 protection, the SMPT-316HT integrates seamlessly into any industrial control architecture.',
+        filterTags: {
+          outputSignal: ['4-20mA', '0-5V', '0-10V', 'RS485'],
+          protectionGrade: 'IP67',
+          measuringRange: 'Up to 100 MPa',
+          powerSupply: '12-36 VDC',
+          applicationAreas: ['High-temperature', 'Chemical', 'Food & Beverage', 'Steam'],
+        },
+      },
     ],
   },
 
@@ -806,4 +889,5 @@ export default {
   ...flowMeterCategories,
   ...levelPressureCategories,
   ...sensorCategories,
+  ...vibrationIsolatorCategories,
 }
